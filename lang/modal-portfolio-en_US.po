@@ -1,0 +1,1823 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: modal-portfolio\n"
+"POT-Creation-Date: 2015-04-30 10:30+0100\n"
+"PO-Revision-Date: 2015-04-30 10:31+0100\n"
+"Last-Translator: Mathieu Chartier <mathieu.chartier@internet-formation.fr>\n"
+"Language-Team: Mathieu Chartier <mathieu.chartier@internet-formation.fr>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: ../inc/modal-portfolio-documentation.php:6
+#: ../inc/modal-portfolio-menus.php:57
+msgid "Documentation"
+msgstr "Readme"
+
+#: ../inc/modal-portfolio-documentation.php:8
+msgid ""
+"<strong>Modal portfolio</strong> est un plugin de galeries d'images "
+"constituant un portfolio avec filtres et effets de style.<br/>L'extension "
+"utilise un système de shortcode <strong>[modal-portfolio]</strong> avec "
+"options (décrites ci-dessous)."
+msgstr ""
+"<strong>Modal portfolio</strong> is an image gallery plugin constituting a "
+"portfolio with filters and style effects.<br/>The extension uses a system "
+"shortcode <strong>[modal-portfolio]</strong> with options (described below) ."
+
+#: ../inc/modal-portfolio-documentation.php:10
+msgid ""
+"La documentation ci-dessous explique l'installation et le fonctionnement "
+"global du plugin."
+msgstr ""
+"The following documentation describes the installation and overall operation "
+"of the plugin."
+
+#: ../inc/modal-portfolio-documentation.php:12
+msgid ""
+"<em>N.B. : n'hésitez pas à contacter <a href=\"http://blog.internet-"
+"formation.fr\" target=\"_blank\">Mathieu Chartier</a>, le créateur du "
+"plugin, pour de plus amples informations.</em>"
+msgstr ""
+"<em>N.B.: contact <a href=\"http://blog.internet-formation.fr/\" target="
+"\"_blank\">Mathieu Chartier</a>, the creator of the plugin, for more "
+"information.</em>"
+
+#: ../inc/modal-portfolio-documentation.php:17
+msgid "Personnalisation du plugin"
+msgstr "Plugin customization"
+
+#: ../inc/modal-portfolio-documentation.php:18
+msgid "1. Régler les options générales"
+msgstr "1. Set the general options"
+
+#: ../inc/modal-portfolio-documentation.php:20
+msgid "Afficher les blocs et gérer les effets désirés"
+msgstr "Show blocks and manage desired effects"
+
+#: ../inc/modal-portfolio-documentation.php:22
+msgid "Choisissez les blocs préférentiels à afficher"
+msgstr "Choose preferential blocks to display"
+
+#: ../inc/modal-portfolio-documentation.php:23
+msgid "Optimisez l'affichage des blocs avec des effets jQuery personnalisables"
+msgstr "Optimize block display with customizable jQuery effects"
+
+#: ../inc/modal-portfolio-documentation.php:28
+msgid "Captures d'écran"
+msgstr "Screenshots"
+
+#: ../inc/modal-portfolio-documentation.php:35
+msgid "2. Créer les catégories du portfolio"
+msgstr "2. Create portfolio categories"
+
+#: ../inc/modal-portfolio-documentation.php:37
+msgid "Installation simple et rapide !"
+msgstr "Fast and simple installation !"
+
+#: ../inc/modal-portfolio-documentation.php:39
+msgid "Créez des catégories parentes et enfants (si désirées)."
+msgstr "Create parent and child categories (if desired)."
+
+#: ../inc/modal-portfolio-documentation.php:40
+msgid ""
+"Veillez à ne pas faire trop de descendances (catégories et sous-catégories, "
+"pas plus...)."
+msgstr ""
+"Be careful not to do too many offspring (categories and subcategories, no "
+"more ...)."
+
+#: ../inc/modal-portfolio-documentation.php:41
+msgid ""
+"N.B. : le plugin fonctionne bien sur deux niveaux mais peut avoir quelques "
+"soucis quand il y a plusieurs niveaux de sous-catégories si vous ne cochez "
+"pas les catégories parentes..."
+msgstr ""
+"Note: the plugin works well on both levels but may have some problems when "
+"there are several levels of subcategories if you do not check parent "
+"categories ..."
+
+#: ../inc/modal-portfolio-documentation.php:52
+msgid "3. Ajouter le shortcode [modal-portfolio] adapté"
+msgstr "3. Add the adapted shortcode [modal-portfolio]"
+
+#: ../inc/modal-portfolio-documentation.php:54
+msgid "Plusieurs options possibles"
+msgstr "Several options"
+
+#: ../inc/modal-portfolio-documentation.php:56
+msgid "Utilisez le shortcode [modal-portfolio] pour tout afficher."
+msgstr "Use the shortcode [modal-portfolio] to display all."
+
+#: ../inc/modal-portfolio-documentation.php:57
+msgid ""
+"Utilisez le shortcode [modal-portfolio categorie_parente=\"nom_categorie\"] "
+"pour n'afficher que les références de la catégorie choisie."
+msgstr ""
+"Use the shortcode [modal-portfolio categorie_parente=\"category_name\"] to "
+"display only the references of the selected category."
+
+#: ../inc/modal-portfolio-documentation.php:58
+msgid ""
+"Utilisez le shortcode [modal-portfolio parents=1] pour afficher les "
+"catégories parentes dans les filtres (masquées par défaut)."
+msgstr ""
+"Use the shortcode [modal-portfolio parents=1] to display parent categories "
+"in filters (hidden by default) ."
+
+#: ../inc/modal-portfolio-documentation.php:59
+msgid "Couplez les deux options si nécessaire comme dans la capture ci-jointe."
+msgstr "Pair the two options if necessary as in the attached capture."
+
+#: ../inc/modal-portfolio-documentation.php:70
+msgid "4. Ajouter les références"
+msgstr "4. Add the references"
+
+#: ../inc/modal-portfolio-documentation.php:72
+msgid "Simple et rapide :"
+msgstr "Fast and simple installation :"
+
+#: ../inc/modal-portfolio-documentation.php:74
+msgid "Ajouter un titre à votre item de portfolio."
+msgstr "Add a title to your portfolio item."
+
+#: ../inc/modal-portfolio-documentation.php:75
+msgid "Remplissez la description si vous utilisez la fonctionnalité."
+msgstr "Complete the description if you use the feature."
+
+#: ../inc/modal-portfolio-documentation.php:76
+msgid "Ajouter un titre pour le survol des vignettes (optionnel)."
+msgstr "Add a title for the thumbnail overview (optional)."
+
+#: ../inc/modal-portfolio-documentation.php:77
+msgid "Choisissez l'image à la Une comme image de portfolio ou de galerie."
+msgstr "Choose the post_thumbnail for the portfolio."
+
+#: ../inc/modal-portfolio-documentation.php:88
+msgid "5. Adapter le CSS"
+msgstr "5. Adapt the CSS"
+
+#: ../inc/modal-portfolio-documentation.php:90
+msgid "Méthode :"
+msgstr "Method:"
+
+#: ../inc/modal-portfolio-documentation.php:92
+msgid "Affichez le chemin de votre propre CSS dans les options."
+msgstr "Display the path to your own CSS in options."
+
+#: ../inc/modal-portfolio-documentation.php:93
+msgid "Créez la feuille de style correspondante dans votre thème."
+msgstr "Create the corresponding stylesheet in your theme."
+
+#: ../inc/modal-portfolio-documentation.php:94
+msgid ""
+"N.B. : laissez vide si vous ne voulez pas utiliser une feuille de style "
+"particulière..."
+msgstr "NB: leave blank if you do not want to use a particular style sheet ..."
+
+#: ../inc/modal-portfolio-documentation.php:96
+msgid "Liste des classes et ID :"
+msgstr "List of the CSS classes and IDs"
+
+#: ../inc/modal-portfolio-documentation.php:98
+msgid "bloc complet d'une référence"
+msgstr "Complete block for a reference"
+
+#: ../inc/modal-portfolio-documentation.php:99
+msgid "bloc d'informations d'une vignette"
+msgstr "block information of a thumbnail"
+
+#: ../inc/modal-portfolio-documentation.php:100
+msgid "fond d'écran d'une vignette (effet jQuery)"
+msgstr "thumbnail background (jQuery effect)"
+
+#: ../inc/modal-portfolio-documentation.php:101
+msgid "titre d'une vignette"
+msgstr "Thumbnail title"
+
+#: ../inc/modal-portfolio-documentation.php:102
+msgid "catégorie de la vignette"
+msgstr "Thumbnail category"
+
+#: ../inc/modal-portfolio-documentation.php:103
+msgid "bloc contenant les filtres"
+msgstr "block containing filters"
+
+#: ../inc/modal-portfolio-documentation.php:104
+msgid "bouton d'un filtre"
+msgstr "filter bouton"
+
+#: ../inc/modal-portfolio-documentation.php:105
+msgid "bouton courant d'un filtre"
+msgstr "current filter button"
+
+#: ../inc/modal-portfolio-documentation.php:106
+msgid "bloc contenant toutes les références et les modales"
+msgstr "block containing all references and modal"
+
+#: ../inc/modal-portfolio-documentation.php:107
+msgid "bloc d'une vignette (avec titre et catégorie)"
+msgstr "thumbnail block (with title and category)"
+
+#: ../inc/modal-portfolio-documentation.php:108
+msgid "classe de la modale cachée par défaut"
+msgstr "class of default hidden modal"
+
+#: ../inc/modal-portfolio-documentation.php:109
+msgid "bloc complet de la modale (avec croix de fermeture, etc.)"
+msgstr "complete block of the modal (with closing cross, etc.)"
+
+#: ../inc/modal-portfolio-documentation.php:110
+msgid "classe du fond d'écran (overlay)"
+msgstr "Background class (overlay)"
+
+#: ../inc/modal-portfolio-documentation.php:111
+msgid "bloc de la modale (contenu)"
+msgstr "modal block (content)"
+
+#: ../inc/modal-portfolio-documentation.php:112
+msgid "bloc contenu dans .simple-modal-wrap"
+msgstr "block in .simple-modal-wrap"
+
+#: ../inc/modal-portfolio-documentation.php:113
+msgid "classe de la croix de fermeture de la modale"
+msgstr "CSS class of the modal closing cross"
+
+#: ../inc/modal-portfolio-documentation.php:114
+msgid "bloc qui contient les informations de la fenêtre modale"
+msgstr "block that contains the information from the modal window"
+
+#: ../inc/modal-portfolio-documentation.php:115
+msgid "classe de l'image affichée dans la fenêtre modale"
+msgstr "class of the image displayed in the modal window"
+
+#: ../inc/modal-portfolio-documentation.php:116
+msgid "classe des contenus affichés dans la modale"
+msgstr "class of content displayed in the modal"
+
+#: ../inc/modal-portfolio-documentation.php:117
+msgid "classe du bloc contenant le bouton \"Fermer\""
+msgstr "class of the block containing the \"Close\" button"
+
+#: ../inc/modal-portfolio-menus.php:5 ../inc/modal-portfolio-menus.php:6
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: ../inc/modal-portfolio-menus.php:7
+msgid "Toutes les références"
+msgstr "All the references"
+
+#: ../inc/modal-portfolio-menus.php:8
+msgid "Voir la référence"
+msgstr "See the reference"
+
+#: ../inc/modal-portfolio-menus.php:9
+msgid "Ajouter une référence"
+msgstr "Add a reference"
+
+#: ../inc/modal-portfolio-menus.php:10
+msgid "Ajouter"
+msgstr "Add"
+
+#: ../inc/modal-portfolio-menus.php:11
+msgid "Editer une référence"
+msgstr "Edit a reference"
+
+#: ../inc/modal-portfolio-menus.php:12
+msgid "Mettre à jour"
+msgstr "Update"
+
+#: ../inc/modal-portfolio-menus.php:13
+msgid "Rechercher une référence"
+msgstr "Look for a reference"
+
+#: ../inc/modal-portfolio-menus.php:14
+msgid "Aucun résultat"
+msgstr "No result"
+
+#: ../inc/modal-portfolio-menus.php:15
+msgid "Aucun résultat dans la corbeille"
+msgstr "Empty trash"
+
+#: ../inc/modal-portfolio-menus.php:44
+msgid "Catégories"
+msgstr "Categories"
+
+#: ../inc/modal-portfolio-menus.php:56
+msgid "Options"
+msgstr "Settings"
+
+#: ../inc/modal-portfolio-menus.php:70
+msgid "Voir toutes les catégories"
+msgstr "View all categories"
+
+#: ../inc/modal-portfolio-metaboxes.php:4
+msgid "Titre de la vignette"
+msgstr "Thumbnail title"
+
+#: ../inc/modal-portfolio-metaboxes.php:18
+msgid ""
+"<p><em>Titre affiché lors du survol des vignettes dans la page des "
+"références (Porfolio)</em></p>"
+msgstr ""
+"<p><em>Title displayed when hovering the thumbnail in the references page "
+"(Porfolio)</em></p>"
+
+#: ../inc/modal-portfolio-options.php:50
+#: ../inc/modal-portfolio-options.php:194
+msgid "Enregistrer"
+msgstr "Update"
+
+#: ../inc/modal-portfolio-options.php:58
+msgid "Réglages de Modal Portfolio"
+msgstr "Settings"
+
+#: ../inc/modal-portfolio-options.php:60
+msgid ""
+"<strong>Modal portfolio</strong> est une extension destinée à afficher une "
+"galerie photo (portfolio) avec des modales (pop-in) contenant éventuellement "
+"une description personnalisable."
+msgstr ""
+"<strong>Modal portfolio</strong> is an extension to display a photo gallery "
+"(portfolio) with modal (pop- in) possibly containing a customizable "
+"description."
+
+#: ../inc/modal-portfolio-options.php:61
+msgid ""
+"Il suffit d'utiliser le shortcode <strong>[modal-portfolio]</strong> avec ou "
+"sans options pour afficher les références (<em>voir la documentation pour "
+"les options complémentaires</em>)."
+msgstr ""
+"Just use the shortcode <strong>[modal-portfolio]</strong> with or without "
+"options to display the references (<em>see documentation (readme section) "
+"for additional options</em>) ."
+
+#: ../inc/modal-portfolio-options.php:62
+msgid ""
+"Plusieurs options sont permises afin de personnaliser au mieux l'affichage "
+"dans les modales :"
+msgstr ""
+"Multiple options are permitted to customize to best display in the modal:"
+
+#: ../inc/modal-portfolio-options.php:64
+msgid "Afficher ou non le titre et la description dans la modale"
+msgstr "Show title and description in the modal?"
+
+#: ../inc/modal-portfolio-options.php:65
+msgid "Afficher ou non le titre de vignette au survol"
+msgstr "View title when hovering the thumbnail?"
+
+#: ../inc/modal-portfolio-options.php:66
+msgid "Afficher ou non le bouton \"Fermer\" dans la fenêtre modale"
+msgstr "View \"Close\" button in the modal window?"
+
+#: ../inc/modal-portfolio-options.php:68
+msgid ""
+"<em>N.B. : cette extension n'est pas parfaite, n'hésitez pas à contacter <a "
+"href=\"http://blog.internet-formation.fr\" target=\"_blank\">Mathieu "
+"Chartier</a>, le créateur du plugin, pour de plus amples informations.</em>"
+msgstr ""
+"<em>N.B.: contact <a href=\"http://blog.internet-formation.fr/\" target="
+"\"_blank\">Mathieu Chartier</a>, the creator of the plugin, for more "
+"information.</em>"
+
+#: ../inc/modal-portfolio-options.php:138
+msgid "Paramétrage général"
+msgstr "General Settings"
+
+#: ../inc/modal-portfolio-options.php:141
+#: ../inc/modal-portfolio-options.php:149
+#: ../inc/modal-portfolio-options.php:157
+#: ../inc/modal-portfolio-options.php:165
+#: ../inc/modal-portfolio-options.php:173
+#: ../inc/modal-portfolio-options.php:181
+#: ../inc/modal-portfolio-options.php:208
+#: ../inc/modal-portfolio-options.php:244
+msgid "Oui"
+msgstr "Yes"
+
+#: ../inc/modal-portfolio-options.php:142
+#: ../inc/modal-portfolio-options.php:150
+#: ../inc/modal-portfolio-options.php:158
+#: ../inc/modal-portfolio-options.php:166
+#: ../inc/modal-portfolio-options.php:174
+#: ../inc/modal-portfolio-options.php:182
+#: ../inc/modal-portfolio-options.php:209
+#: ../inc/modal-portfolio-options.php:245
+msgid "Non"
+msgstr "No"
+
+#: ../inc/modal-portfolio-options.php:144
+msgid "Afficher les filtres ?"
+msgstr "Display filters?"
+
+#: ../inc/modal-portfolio-options.php:145
+msgid "L'option permet de masquer les filtres de catégories des portfolios."
+msgstr "The option to hide the category filters portfolios."
+
+#: ../inc/modal-portfolio-options.php:152
+msgid "Afficher le filtre \"Tout\" ?"
+msgstr "Show the \"All\" filter?"
+
+#: ../inc/modal-portfolio-options.php:153
+msgid "L'option permet de masquer le filtre qui affiche toutes les références."
+msgstr "This option allows to hide the filter that displays all references."
+
+#: ../inc/modal-portfolio-options.php:160
+msgid "Afficher la description dans la fenêtre modale ?"
+msgstr "Show description in modal window?"
+
+#: ../inc/modal-portfolio-options.php:161
+msgid ""
+"L'option permet de modifier la fenêtre modale pour afficher l'image avec ou "
+"sans description."
+msgstr ""
+"The option allows you to change the modal window to display the image with "
+"or without description."
+
+#: ../inc/modal-portfolio-options.php:168
+msgid "Afficher le titre dans la fenêtre modale ?"
+msgstr "Show title in the modal window?"
+
+#: ../inc/modal-portfolio-options.php:169
+msgid ""
+"L'option permet de modifier la fenêtre modale pour afficher l'image avec ou "
+"sans titre."
+msgstr ""
+"The option allows you to change the modal window to display the image with "
+"or without title."
+
+#: ../inc/modal-portfolio-options.php:176
+msgid "Afficher le titre et la catégorie au survol des vignettes ?"
+msgstr "Show title and category when hovering thumbnail ?"
+
+#: ../inc/modal-portfolio-options.php:177
+msgid "L'option permet de masquer les effets de texte au survol des vignettes."
+msgstr "The option to hide text effects on mouse over thumbnail."
+
+#: ../inc/modal-portfolio-options.php:184
+msgid "Afficher le bouton \"Fermer\" dans la fenêtre modale ?"
+msgstr "View the \"Close\" button in the modal window ?"
+
+#: ../inc/modal-portfolio-options.php:185
+msgid "L'option permet de masquer le bouton de fermeture."
+msgstr "The option to hide the close button."
+
+#: ../inc/modal-portfolio-options.php:189
+msgid "Chemin du fichier CSS du thème"
+msgstr "Path to the CSS file (for the plugin template)"
+
+#: ../inc/modal-portfolio-options.php:190
+msgid ""
+"L'option permet de choisir une autre feuille de style si désirée (laisser "
+"vide pour n'utiliser aucun CSS propre au plugin)"
+msgstr ""
+"This option allows to choose another if desired style sheet (leave blank to "
+"use no own CSS to plugin)"
+
+#: ../inc/modal-portfolio-options.php:190
+msgid "par défaut."
+msgstr "by default."
+
+#: ../inc/modal-portfolio-options.php:199
+msgid "Personnalisation des effets jQuery"
+msgstr "Customizing jQuery effects"
+
+#: ../inc/modal-portfolio-options.php:203
+msgid "Niveau d'opacité du fond (overlay)"
+msgstr "Background opacity (overlay)"
+
+#: ../inc/modal-portfolio-options.php:204
+msgid "Possibilité de masquer le fond en mettant la valeur à 0."
+msgstr "Ability to hide the background by setting the value to 0."
+
+#: ../inc/modal-portfolio-options.php:211
+msgid "Fermer la modale en cliquant sur le fond (overlay) ?"
+msgstr "Close modal clicking on the overlay?"
+
+#: ../inc/modal-portfolio-options.php:212
+msgid ""
+"L'option permet de fermer la fenêtre modale sans appuyer sur le bouton "
+"\"Fermer\""
+msgstr ""
+"The option closes the modal window without pressing the \"Close\" button."
+
+#: ../inc/modal-portfolio-options.php:216
+msgid "Couleur du fond (overlay)"
+msgstr "Background color (overlay)"
+
+#: ../inc/modal-portfolio-options.php:217
+msgid "Il est possible de masquer l'overlay en vidant le champ."
+msgstr "You can hide the overlay emptying the field."
+
+#: ../inc/modal-portfolio-options.php:222
+msgid "Durée d'affichage du fond (en ms)"
+msgstr "Display duration of the overlay (in ms)"
+
+#: ../inc/modal-portfolio-options.php:223
+msgid "Sélectionnez le nombre de millisecondes utiles pour afficher le fond"
+msgstr "Select the number of milliseconds helpful to show the overlay."
+
+#: ../inc/modal-portfolio-options.php:228
+msgid "Durée d'affichage de la modale et des contenus (en ms)"
+msgstr ""
+"Duration of effect to display the modal window and the contents (in ms)"
+
+#: ../inc/modal-portfolio-options.php:229
+msgid ""
+"Sélectionnez le nombre de millisecondes utiles pour afficher la modale et "
+"les contenus"
+msgstr ""
+"Select the number of milliseconds to display the modal window and the content"
+
+#: ../inc/modal-portfolio-options.php:233
+#: ../inc/modal-portfolio-options.php:254
+#: ../inc/modal-portfolio-options.php:275
+msgid "Aucun"
+msgstr "None"
+
+#: ../inc/modal-portfolio-options.php:234
+msgid "fadeIn"
+msgstr "fadeIn"
+
+#: ../inc/modal-portfolio-options.php:235
+msgid "fadeOut"
+msgstr "fadeOut"
+
+#: ../inc/modal-portfolio-options.php:236
+msgid "SlideUp"
+msgstr "SlideUp"
+
+#: ../inc/modal-portfolio-options.php:237
+msgid "slideDown"
+msgstr "slideDown"
+
+#: ../inc/modal-portfolio-options.php:239
+msgid "Effet de style appliqué à l'ouverture de la fenêtre modale"
+msgstr "Effect of style applied to the opening of the modal window"
+
+#: ../inc/modal-portfolio-options.php:240
+msgid "Seul l'effet jQuery d'ouverture prend en compte cette option !"
+msgstr "Only the opening jQuery effect considers this option!"
+
+#: ../inc/modal-portfolio-options.php:247
+msgid "Appliquer un effet pour le titre des vignettes ?"
+msgstr "Apply effect to the title thumbnail?"
+
+#: ../inc/modal-portfolio-options.php:248
+msgid "Bloque les effets jQuery sur les titres de vignettes"
+msgstr "Blocks jQuery effects on thumbnail title"
+
+#: ../inc/modal-portfolio-options.php:262
+msgid "Premier effet appliqué au texte de la vignette"
+msgstr "First effect applied to the text of the thumbnail"
+
+#: ../inc/modal-portfolio-options.php:263
+msgid "Effet appliqué au survol de la vignette !"
+msgstr "Effect applied when hovering the thumbnail !"
+
+#: ../inc/modal-portfolio-options.php:268
+msgid "Durée du premier effet (en ms)"
+msgstr "Duration of the first effect (in ms)"
+
+#: ../inc/modal-portfolio-options.php:269
+msgid "Sélectionnez le nombre de millisecondes utiles pour le premier effet."
+msgstr "Select the number of milliseconds for the first useful effect."
+
+#: ../inc/modal-portfolio-options.php:283
+msgid "Second effet appliqué au texte de la vignette"
+msgstr "Second effect applied to text thumbnail"
+
+#: ../inc/modal-portfolio-options.php:284
+msgid "Effet appliqué lorsque l'on quitte le survol de la vignette !"
+msgstr "Effect applied after hovering the thumbnail"
+
+#: ../inc/modal-portfolio-options.php:289
+msgid "Durée du second effet (en ms)"
+msgstr "Duration of the second effect (in ms)"
+
+#: ../inc/modal-portfolio-options.php:290
+msgid "Sélectionnez le nombre de millisecondes utiles pour le second effet."
+msgstr "Select the number of milliseconds for the second useful effect."
+
+#: ../inc/modal-portfolio-shortcode.php:27
+msgid "Tous"
+msgstr "All"
+
+#: ../inc/modal-portfolio-shortcode.php:207
+msgid "Fermer"
+msgstr "Close"
+
+#~ msgid "Gestion de l'autocomplétion"
+#~ msgstr "Autosuggest management"
+
+#~ msgid ""
+#~ "<strong>WP-Advanced-Search</strong> permet d'activer un système "
+#~ "d'autocomplétion paramétrable."
+#~ msgstr ""
+#~ "<strong>WP-Advanced-Search</strong> enables a configurable autocompletion "
+#~ "system."
+
+#~ msgid "Modifiez les options pour obtenir un résultat adéquat."
+#~ msgstr "Manage options for proper result."
+
+#~ msgid "Options pour l'autocomplétion"
+#~ msgstr "Options for the autocompletion"
+
+#~ msgid "Activer l'autocomplétion ?"
+#~ msgstr "Enabled the autocompletion?"
+
+#~ msgid "Sélecteur jQuery du champ de recherche"
+#~ msgstr "JQuery selector of the search field"
+
+#~ msgid "Champ obligatoire (\"#id\" ou \".class\" du champ de recherche)"
+#~ msgstr "Required field (\"#id\" or \".class\" of the search field)"
+
+#~ msgid "Sélectionner automatiquement une suggestion ?"
+#~ msgstr "Automatically select the first suggestion?"
+
+#~ msgid "Se place automatiquement sur la première suggestion ou non"
+#~ msgstr "Automatically moves to the first suggestion or not"
+
+#~ msgid "Début de mot"
+#~ msgstr "Beginning word"
+
+#~ msgid "Contenu dans le mot"
+#~ msgstr "Contained in the word"
+
+#~ msgid "Type d'autocomplétion"
+#~ msgstr "Autosuggest type"
+
+#~ msgid ""
+#~ "Suggère des mots contenant les lettres tapées ou commençant par ces "
+#~ "lettres"
+#~ msgstr ""
+#~ "Suggests words containing the typed letters or beginning with those "
+#~ "letters"
+
+#~ msgid "Nombre de suggestions affichées"
+#~ msgstr "Number of suggestions displayed"
+
+#~ msgid "Pour le premier mot"
+#~ msgstr "For the first word"
+
+#~ msgid "Pour chaque mot"
+#~ msgstr "For all words"
+
+#~ msgid "Type d'utilisation des auto-suggestions"
+#~ msgstr "Type of use of the autosuggestions"
+
+#~ msgid "Personnalisation technique (optionnel)"
+#~ msgstr "Technical customization (optional)"
+
+#~ msgid "Créer la table de l'index inversé ?"
+#~ msgstr "Create the table of the index of words?"
+
+#~ msgid ""
+#~ "Cette option s'active uniquement quand l'index inversé n'est pas créé "
+#~ "(recommandé)"
+#~ msgstr ""
+#~ "This option is active only when the index of words is not created "
+#~ "(recommended)"
+
+#~ msgid "Nom de la table de l'index inversé"
+#~ msgstr "Table name for the index of words"
+
+#~ msgid "Nom de la colonne de l'index inversé"
+#~ msgstr "Column name for the index of words"
+
+#~ msgid "Supprimer la table de l'index inversé ?"
+#~ msgstr "Delete index table?"
+
+#~ msgid ""
+#~ "Cette option s'active uniquement si l'index inversé existe (déconseillé)"
+#~ msgstr "This option is enabled only if the index is created (recommended)"
+
+#~ msgid "Générer automatiquement l'index inversé ?"
+#~ msgstr "Automatically generate the index of words?"
+
+#~ msgid ""
+#~ "Ajoute automatiquement de nouvelles suggestions au fur et à mesure des "
+#~ "recherches des internautes pour compléter l'index de mots clés existant"
+#~ msgstr ""
+#~ "Automatically add new suggestions to complement existing keyword index "
+#~ "when search queries are made"
+
+#~ msgid " lettres"
+#~ msgstr " letters"
+
+#~ msgid "Taille minimale des mots ajoutés"
+#~ msgstr "Minimum size of words added"
+
+#~ msgid "Ajout de mots et expressions"
+#~ msgstr "Add words and expressions"
+
+#~ msgid ""
+#~ "Séparez les mots ou expressions par des virgules !<br/>Exemple --> "
+#~ "moteur, moteur de recherche, recherche, advanced, search<br/>N.B. : les "
+#~ "doublons ne s'ajoutent pas..."
+#~ msgstr ""
+#~ "Separate words or phrases with commas!<br/>Example --> engine, search "
+#~ "engine, search, advanced, search<br/>NB: duplicate words not added ..."
+
+#~ msgid "Ajouter à l'index"
+#~ msgstr "Add to index"
+
+#~ msgid "Gestion de l'index existant"
+#~ msgstr "Index management"
+
+#~ msgid "Supprimer des mots et expressions dans l'index (si nécessaire)"
+#~ msgstr "Delete words and expressions in the index (optional)"
+
+#~ msgid ""
+#~ "Sélectionner les mots et expressions qui ne vous conviennent pas et "
+#~ "supprimer-les..."
+#~ msgstr "Select words and expressions to delete them."
+
+#~ msgid "&Ecirc;tes-vous sûrs de vouloir supprimer ces mots et expressions ?"
+#~ msgstr "Are you sure to delete the selected words and expressions?"
+
+#~ msgid "Supprimer de l'index"
+#~ msgstr "Delete words from the index?"
+
+#~ msgid ""
+#~ "<strong>WP Advanced Search</strong> est un moteur de recherche complet "
+#~ "pour WordPress qui corrige de nombreuses failles du moteur initial."
+#~ msgstr ""
+#~ "<strong>WP-Advanced-Search</strong> enables a powerful search engine for "
+#~ "WordPress."
+
+#~ msgid "1. Préparez le formulaire de recherche (exemple : search-form.php)"
+#~ msgstr "1. Prepare the search form (for example : search-form.php)"
+
+#~ msgid "Repérez le formulaire de recherche WordPress"
+#~ msgstr "Locate the search form"
+
+#~ msgid ""
+#~ "Localisez l'attribut \"name\" du champ de recherche (\"s\" par défaut) et "
+#~ "le modifiez si désiré."
+#~ msgstr ""
+#~ "Locate the attribute \"name\" field research (\"s\" by default) and "
+#~ "change if desired."
+
+#~ msgid ""
+#~ "S'assurer que le formulaire pointe vers la page de recherche (search.php "
+#~ "par défaut)."
+#~ msgstr "Make sure the form points to the search page (search.php default)."
+
+#~ msgid "2. Préparez la page de résultats (exemple : search.php)"
+#~ msgstr "2. Prepare the results page (for example : search.php)"
+
+#~ msgid ""
+#~ "&nbsp;&nbsp;&nbsp;&nbsp;Ajouter le code <strong>&lt;?php "
+#~ "WP_Advanced_Search(); ?&gt;</strong> pour afficher les résultats"
+#~ msgstr ""
+#~ "&nbsp;&nbsp;&nbsp;&nbsp;Add code <strong>&lt;?php WP_Advanced_Search (); ?"
+#~ "&gt;</strong> to display the results"
+
+#~ msgid ""
+#~ "Supprimez toute la boucle d'affichage initiale des résultats de recherche."
+#~ msgstr "Remove any initial display loop search results."
+
+#~ msgid ""
+#~ "Placez-vous dans le bloc qui doit recevoir les résultats de recherche."
+#~ msgstr "Place yourself in the block to receive search results."
+
+#~ msgid ""
+#~ "Remplacez la boucle par le code <strong>&lt;?php WP_Advanced_Search(); ?"
+#~ "&gt;</strong>."
+#~ msgstr ""
+#~ "Replace the loop code with <strong>&lt;?php WP_Advanced_Search (); ?&gt;</"
+#~ "strong> to display the results"
+
+#~ msgid "3. Paramétrez le moteur à votre guise"
+#~ msgstr "3. Set the search engine below"
+
+#~ msgid ""
+#~ "Les réglages par défaut répondent aux fonctionnalités essentielles du "
+#~ "moteur de recherche."
+#~ msgstr ""
+#~ "The default settings meet the essential features of the search engine."
+
+#~ msgid ""
+#~ "Entrez la valeur de l'attribut \"name\" du champ de recherche (\"s\" par "
+#~ "défaut) et celui des tables dans lesquelles rechercher (laissez par "
+#~ "défaut si vous avez des doutes)"
+#~ msgstr ""
+#~ "Enter the value of the attribute \"name\" field research (\"s\" by "
+#~ "default) and the tables in which search (leave default if you are unsure)"
+
+#~ msgid ""
+#~ "Choisissez le type de recherche : FULLTEXT (texte intégral), REGEXP "
+#~ "(relativement précis), LIKE (recherche approchante)"
+#~ msgstr ""
+#~ "Choose the type of search: FULLTEXT (full text search) REGEXP (relatively "
+#~ "accurate), LIKE (approaching search)"
+
+#~ msgid ""
+#~ "Paramétrez l'ordre d'affichage des résultats du moteur en choisissant la "
+#~ "colonne de classement (dates des articles et pages par défaut) et/ou en "
+#~ "activant l'algorithme de pertinence (il affiche les résultats qui "
+#~ "répondent le plus à la recherche)."
+#~ msgstr ""
+#~ "Set the display order of search engine results by selecting the column "
+#~ "rank (dates articles and pages by default) and / or activating the "
+#~ "relevancy algorithm (it displays the results that best meet the research)."
+
+#~ msgid "Activez ou non la surbrillance des mots-clés recherchés."
+#~ msgstr "Highlight keywords search?"
+
+#~ msgid ""
+#~ "Activez ou non les \"stop words\", c'est-à-dire l'exclusion des mots "
+#~ "vides lors des recherches. Il est aussi possible d'exclure les mots qui "
+#~ "ne dépassent pas un certain nombre de caractères."
+#~ msgstr ""
+#~ "Enable or not the \"stop words\", that is to say, excluding empty words "
+#~ "when searching. It is also possible to exclude words that do not exceed a "
+#~ "certain number of characters."
+
+#~ msgid "<strong>N.B. : particularités des index FULLTEXT !</strong>"
+#~ msgstr "<strong>NB: Characteristics of FULLTEXT index</strong>"
+
+#~ msgid ""
+#~ "La recherche en texte intégrale (FULLTEXT) est la plus aboutie mais "
+#~ "demande quelques paramétrages."
+#~ msgstr ""
+#~ "The full text search (FULLTEXT) is the most successful but requires some "
+#~ "settings."
+
+#~ msgid ""
+#~ "<strong>Installation d'index FULLTEXT</strong> sur les tables de "
+#~ "recherche. Cliquez sur ce lien pour gagner du temps : <a href=\"#\" "
+#~ "onclick=\""
+#~ msgstr ""
+#~ "<strong>Installation FULLTEXT index</strong> on SQL tables. Click this "
+#~ "link to save time: <a href=\"#\" onclick=\""
+
+#~ msgid "\">créez les index FULLTEXT</a>."
+#~ msgstr "\">create FULLTEXT index</a>."
+
+#~ msgid ""
+#~ "La recherche FULLTEXT répond à certains paramètres du fichier my.ini de "
+#~ "MySQL, il convient d'avoir accès à ce fichier pour gérer totalement la "
+#~ "recherche en texte intégrale..."
+#~ msgstr ""
+#~ "FULLTEXT search requires a setting MySQL my.ini file, you should have "
+#~ "access to this file to fully manage the full text search ..."
+
+#~ msgid ""
+#~ "Par défaut, la recherche FULLTEXT exclut quelques \"stopwords\" mais "
+#~ "aussi les mots courts (de 1 à 3 caractères), ce qui peut poser problème. "
+#~ "Il faut modifier le <strong>paramètre ft_min_word_len</strong> si vous "
+#~ "avez un serveur dédié. Si vous détenez un serveur mutualisé, il est "
+#~ "conseillé d'opter pour la recherche REGEXP ou LIKE si vous voulez que "
+#~ "tous les mots offrent des résultats..."
+#~ msgstr ""
+#~ "By default, the search excludes some FULLTEXT \"stopwords\" but also "
+#~ "short words (1 to 3 letters), which can be problematic. You must change "
+#~ "the parameter <strong>ft_min_word_len</strong> if you have a dedicated "
+#~ "server. If you have a shared server, it is better to opt for research or "
+#~ "REGEXP LIKE if you want all words provide results ..."
+
+#~ msgid "4. Stylisez l'ensemble et les résultats de recherche"
+#~ msgstr "4. Stylize and all search results"
+
+#~ msgid ""
+#~ "Choisissez un thème dans la liste ou désactivez les thèmes (style "
+#~ "personnalisé)."
+#~ msgstr "Choose a template from the list or disable themes (custom style)."
+
+#~ msgid "Paramétrez les classes CSS selon vos envies."
+#~ msgstr "Set CSS classes as you wish."
+
+#~ msgid ""
+#~ "Formatez la date comme bon vous semble (si vous souhaitez l'afficher)."
+#~ msgstr "Format the date as you want (if you want to display)."
+
+#~ msgid "Numérotez ou non les résultats de recherche."
+#~ msgstr "Number the search results?"
+
+#~ msgid "5. Réglez la pagination (optionnel)"
+#~ msgstr "5. Set the pagination (optional)"
+
+#~ msgid "Plusieurs options de personnalisation de la pagination."
+#~ msgstr "Several options for customizing the pagination."
+
+#~ msgid ""
+#~ "Activez ou non la pagination (affiche tous les résultats si désactivé)."
+#~ msgstr "Enable or not the pagination (display all results if disabled)."
+
+#~ msgid "Sélectionnez les liens à afficher dans la pagination."
+#~ msgstr "Select the links to display in pagination."
+
+#~ msgid ""
+#~ "Choisissez un thème ou non pour la pagination (plusieurs couleurs "
+#~ "disponibles)."
+#~ msgstr "Choose a themplate or not for pagination (more colors available)."
+
+#~ msgid "Modifiez les libellés de la pagination si besoin."
+#~ msgstr "Change labels pagination if needed."
+
+#~ msgid "6. Réglez l'autocomplétion (optionnel)"
+#~ msgstr "6. Manage the autocompletion (optional)"
+
+#~ msgid "Plusieurs options de personnalisation pour les autosuggestions."
+#~ msgstr "Several options for customizing the autocompletion."
+
+#~ msgid "Activez ou non l'autocomplétion."
+#~ msgstr "Enable or not autocompletion."
+
+#~ msgid ""
+#~ "Important : opter pour le bon sélecteur du champ de recherche (#id ou ."
+#~ "class en fonction --> .search-field pour le thème Twenty Thourteen par "
+#~ "exemple)."
+#~ msgstr ""
+#~ "Important: choose the right search field selector (#id or .class --> ."
+#~ "search-field for the theme Twenty Thourteen by example)."
+
+#~ msgid ""
+#~ "Important : créer la table d'index inversé pour rendre le système "
+#~ "fonctionnel."
+#~ msgstr ""
+#~ "Important: create the index of words to make the system function table."
+
+#~ msgid "Adaptez les options à vos envies."
+#~ msgstr "Customize options for your needs."
+
+#~ msgid ""
+#~ "N.B. : il est recommandé d'ajouter soi-même des mots et expressions au "
+#~ "début"
+#~ msgstr "NB: it is recommended to add your own words at the beginning"
+
+#~ msgid ""
+#~ "Index FULLTEXT créés avec succès !\\nVous pouvez utiliser le type "
+#~ "FULLTEXT dorénavant..."
+#~ msgstr ""
+#~ "FULLTEXT indexes created successfully!\\nYou can use the FULLTEXT type "
+#~ "now ..."
+
+#~ msgid "résultats"
+#~ msgstr "results"
+
+#~ msgid "pour votre recherche"
+#~ msgstr "found"
+
+#~ msgid " à "
+#~ msgstr " to "
+
+#~ msgid "Publié "
+#~ msgstr "Published "
+
+#~ msgid "le "
+#~ msgstr "the "
+
+#~ msgid "par "
+#~ msgstr "by "
+
+#~ msgid "dans "
+#~ msgstr "in "
+
+#~ msgid "Aucun commentaire"
+#~ msgstr "No comment"
+
+#~ msgid "commentaire"
+#~ msgstr "comment"
+
+#~ msgid "commentaires"
+#~ msgstr "comments"
+
+#~ msgid "Lire la suite..."
+#~ msgstr "Read more ..."
+
+#~ msgid "Aide et réglages de WP-Advanced-Search."
+#~ msgstr "WP-Advanced-Search settings."
+
+#~ msgid ""
+#~ "<strong>WP Advanced Search</strong> permet d'activer un moteur de "
+#~ "recherche puissant pour WordPress."
+#~ msgstr ""
+#~ "<strong>WP-Advanced-Search</strong> enables a powerful search engine for "
+#~ "WordPress."
+
+#~ msgid ""
+#~ "Plusieurs types de recherche (\"LIKE\", \"REGEXP\" ou \"FULLTEXT\"), "
+#~ "algorithme de pertinence, mise en surbrillance des mots recherchés, "
+#~ "pagination, affichage paramétrable... "
+#~ msgstr ""
+#~ "Several types of research (\"LIKE\", \"REGEXP\" or \"FULLTEXT\"), "
+#~ "relevancy algorithm, highlighting search terms, pagination, configurable "
+#~ "display ..."
+
+#~ msgid "Tout est entièrement modulable pour obtenir des résultats précis !"
+#~ msgstr "Everything is fully configurable for accurate results!"
+
+#~ msgid ""
+#~ "<strong>Consultez la documentation pour plus d'informations si "
+#~ "nécessaire...</strong>"
+#~ msgstr ""
+#~ "<strong>Read the documentation for more information if needed ...</strong>"
+
+#~ msgid "Options générales du moteur"
+#~ msgstr "General search engine options"
+
+#~ msgid "Table de recherche"
+#~ msgstr "Search table"
+
+#~ msgid ""
+#~ "Il est recommandé de laisser la table \"xx_posts\" contenant toutes les "
+#~ "publications"
+#~ msgstr ""
+#~ "It is recommended to leave the table \"xx_posts\" containing all "
+#~ "publications"
+
+#~ msgid "Attribut \"name\" du champ de recherche"
+#~ msgstr "Attribute \"name\" field search"
+
+#~ msgid "Colonnes de la table dans lesquelles rechercher"
+#~ msgstr "Table columns to search"
+
+#~ msgid "Séparez les valeurs par des virgules"
+#~ msgstr "Separate values with commas"
+
+#~ msgid "FULLTEXT"
+#~ msgstr "FULLTEXT"
+
+#~ msgid "REGEXP"
+#~ msgstr "REGEXP"
+
+#~ msgid "LIKE"
+#~ msgstr "LIKE"
+
+#~ msgid "Type de recherche PHP-MySQL"
+#~ msgstr "Search type in PHP-MySQL"
+
+#~ msgid "<a href=\"#\" onclick=\""
+#~ msgstr "<a href=\"#\" onclick=\""
+
+#~ msgid ""
+#~ "\">Installez les index FULLTEXT</a> pour que la recherche FULLTEXT puisse "
+#~ "fonctionner..."
+#~ msgstr ""
+#~ "\">Install the FULLTEXT index</a> for research FULLTEXT works well ..."
+
+#~ msgid "Articles"
+#~ msgstr "Posts"
+
+#~ msgid "Pages"
+#~ msgstr "Pages"
+
+#~ msgid "Articles + Pages"
+#~ msgstr "Posts + Pages"
+
+#~ msgid "Tous les contenus publiés"
+#~ msgstr "All published content"
+
+#~ msgid "Autres"
+#~ msgstr "Others"
+
+#~ msgid "Type de contenus pour la recherche ?"
+#~ msgstr "Content type for search ?"
+
+#~ msgid "\"Autres\" si vous n'utilisez pas la table de recherche \"xx_posts\""
+#~ msgstr "\"Other\" if you do not use the table \"xx_posts\""
+
+#~ msgid "Catégories de recherche (articles uniquement)"
+#~ msgstr "Search categories (only for posts)"
+
+#~ msgid "Nombre de résultats par page"
+#~ msgstr "Number of results per page"
+
+#~ msgid "0 ou vide pour tout afficher dans une page (sans pagination)"
+#~ msgstr "0 or blank to display all in one page (without pagination)"
+
+#~ msgid "ID du champ de recherche"
+#~ msgstr "ID for the search field"
+
+#~ msgid ""
+#~ "Indiquez l'ID du champ de recherche (HTML) pour aider les options en "
+#~ "Javascript (souvent identique à l'attribut name)"
+#~ msgstr ""
+#~ "Enter the ID of the search field (HTML) to help the script in Javascript "
+#~ "(often the same as the name attribute)"
+
+#~ msgid "Placeholder du champ de recherche"
+#~ msgstr "placeholder of search field"
+
+#~ msgid ""
+#~ "Blocage de la soumission du formulaire de recherche si un \"placeholder\" "
+#~ "est précisé (texte par défaut écrit dans un champ de recherche)"
+#~ msgstr ""
+#~ "Blocking the submission of the search form if a \"placeholder\" is "
+#~ "specified (default text in a search field)"
+
+#~ msgid "Mise en surbrillance et rendu"
+#~ msgstr "Highlight keywords and display settings"
+
+#~ msgid "Précise"
+#~ msgstr "Precise"
+
+#~ msgid "Approchante"
+#~ msgstr "Approaching"
+
+#~ msgid "Aucune mise en gras"
+#~ msgstr "No bolding"
+
+#~ msgid "Mise en surbrillance des mots clés"
+#~ msgstr "Highlight keywords search"
+
+#~ msgid ""
+#~ "\"Précise\" pour rechercher la chaîne exacte, \"Approchante\" pour "
+#~ "chercher les mots contenant une chaîne (si recherche LIKE)"
+#~ msgstr ""
+#~ "\"Precise\" for the exact string, \"approaching\" for the word containing "
+#~ "a string (if LIKE search)"
+
+#~ msgid "Texte pour la requête recherchée"
+#~ msgstr "Text for the search query"
+
+#~ msgid "Laissez vide pour masquer le texte"
+#~ msgstr "Empty to hide the text."
+
+#~ msgid "Texte affiché si aucun résultat"
+#~ msgstr "Display text when there is no result"
+
+#~ msgid "Ordre des résultats"
+#~ msgstr "Order search results"
+
+#~ msgid "Ordonner les résultats ?"
+#~ msgstr "Sort results?"
+
+#~ msgid "Algorithme de pertinence ?"
+#~ msgstr "relevance algorithm?"
+
+#~ msgid ""
+#~ "L'algorithme de pertinence affiche en ordre décroissant les résultats qui "
+#~ "ont le plus de correspondances avec la requête"
+#~ msgstr ""
+#~ "The relevancy algorithm displays the results in descending order with the "
+#~ "most connections with the request"
+
+#~ msgid "Colonne de classement des résultats"
+#~ msgstr "Order Column"
+
+#~ msgid "Croissant (ASC)"
+#~ msgstr "Ascending (ASC)"
+
+#~ msgid "Décroissant (DESC)"
+#~ msgstr "Descending (DESC)"
+
+#~ msgid "Croissant ou décroissant ?"
+#~ msgstr "Ascending or descending?"
+
+#~ msgid "Options de formatage des requêtes"
+#~ msgstr "Formatting options for search queries"
+
+#~ msgid "Activer les \"stop words\" ?"
+#~ msgstr "Enable \"stop words\"?"
+
+#~ msgid ""
+#~ "L'activation permet d'ignorer les mots courts classiques (articles, "
+#~ "conjonctions de coordination...)"
+#~ msgstr ""
+#~ "Activation will ignore short words classics (articles, conjunctions ...)"
+
+#~ msgid "Désactivé"
+#~ msgstr "Disabled"
+
+#~ msgid "< 1 caractère"
+#~ msgstr "< 1 character"
+
+#~ msgid "< 2 caractères"
+#~ msgstr "< 2 characters"
+
+#~ msgid "< 3 caractères"
+#~ msgstr "< 3 characters"
+
+#~ msgid "< 4 caractères"
+#~ msgstr "< 4 characters"
+
+#~ msgid "< 5 caractères"
+#~ msgstr "< 5 characters"
+
+#~ msgid "< 6 caractères"
+#~ msgstr "< 6 characters"
+
+#~ msgid "< 7 caractères"
+#~ msgstr "< 7 characters"
+
+#~ msgid "< 8 caractères"
+#~ msgstr "< 7 characters"
+
+#~ msgid "< 9 caractères"
+#~ msgstr "< 9 characters"
+
+#~ msgid "Exclure les mots courts ?"
+#~ msgstr "Exclude short words?"
+
+#~ msgid "Exacte"
+#~ msgstr "Exact"
+
+#~ msgid "Recherche exacte ou approchante ?"
+#~ msgstr "Exact Search or approaching Search?"
+
+#~ msgid ""
+#~ "\"Exacte\" pour chercher le mot précis ou \"Approchante\" pour trouver "
+#~ "les mots contenant la chaîne de caractères correspondante"
+#~ msgstr ""
+#~ "\"Precise\" for the exact string, \"Approaching\" for the word containing "
+#~ "a string (if LIKE search)"
+
+#~ msgid "UTF-8"
+#~ msgstr "UTF-8"
+
+#~ msgid "ISO-8859-1 (Latin-1)"
+#~ msgstr "ISO-8859-1 (Latin-1)"
+
+#~ msgid "Choix de l'encodage des caractères"
+#~ msgstr "Choice of character encoding"
+
+#~ msgid "Suppression des accents de la requête ?"
+#~ msgstr "Removing accents in the query?"
+
+#~ msgid "Utile si les contenus sont sans accent dans la base de données"
+#~ msgstr "Useful if the words are not emphasized in the database"
+
+#~ msgid "Gestion des SERP (résultats de recherche)"
+#~ msgstr "Display options"
+
+#~ msgid ""
+#~ "<strong>WP-Advanced-Search</strong> permet d'activer une pagination "
+#~ "personnalisable, un système de scroll infini ou tout simplement un "
+#~ "système de \"trigger\" pour afficher les résultats après un clic sur un "
+#~ "lien."
+#~ msgstr ""
+#~ "<strong>WP-Advanced-Search</strong> enables a customizable pagination, an "
+#~ "infinite scroll or simply a \"trigger\" to display the results after "
+#~ "clicking on a link."
+
+#~ msgid ""
+#~ "Modifiez les options de votre choix, le style final et les libellés "
+#~ "associés pour obtenir un résultat adéquat."
+#~ msgstr ""
+#~ "Change options as you want, the final style and labels associated to "
+#~ "obtain adequate results."
+
+#~ msgid "Activer la pagination"
+#~ msgstr "Enabled pagination"
+
+#~ msgid "Pagination classique"
+#~ msgstr "Classic pagination"
+
+#~ msgid "Trigger (au clic)"
+#~ msgstr "Trigger (with click)"
+
+#~ msgid "Scroll infini"
+#~ msgstr "Infinite scroll"
+
+#~ msgid "Type d'affichage des résultats"
+#~ msgstr "Dysplay type for the results"
+
+#~ msgid "Aucun style CSS"
+#~ msgstr "No CSS"
+
+#~ msgid "Feuille CSS Vide"
+#~ msgstr "Empty stylesheet CSS"
+
+#~ msgid "Style CSS pour la pagination"
+#~ msgstr "Pagination stylesheet CSS"
+
+#~ msgid "Options pour le trigger ou le scroll infini"
+#~ msgstr "Options for the trigger Ajax or the infinite scroll"
+
+#~ msgid "Nombre de résultats par palier affiché"
+#~ msgstr "Number of results by step"
+
+#~ msgid "Texte affiché pour le trigger"
+#~ msgstr "Text for the trigger Ajax"
+
+#~ msgid "Libellés et options de la pagination classique"
+#~ msgstr "Label and options for classic pagination"
+
+#~ msgid "Affichage de \"première page\" et \"dernière page\" ?"
+#~ msgstr "Display \"first page\" and \"last page\"?"
+
+#~ msgid "Affichage de \"précédent\" et \"suivant\" ?"
+#~ msgstr "Display \"previous\" and \"next\"?"
+
+#~ msgid "Texte pour \"première page\""
+#~ msgstr "Text for \"first page\""
+
+#~ msgid "Texte pour \"dernière page\""
+#~ msgstr "Text for \"last page\""
+
+#~ msgid "Texte pour \"précédent\""
+#~ msgstr "Text for \"previous\""
+
+#~ msgid "Texte pour \"suivant\""
+#~ msgstr "Text for \"next\""
+
+#~ msgid "Réglages des thèmes et des styles"
+#~ msgstr "Settings for templates and styles"
+
+#~ msgid ""
+#~ "<strong>WP-Advanced-Search</strong> permet d'activer un moteur de "
+#~ "recherche puissant pour WordPress"
+#~ msgstr ""
+#~ "<strong>WP-Advanced-Search</strong> enables a powerful search engine for "
+#~ "WordPress"
+
+#~ msgid ""
+#~ "Plusieurs types de recherche (\"LIKE\", \"REGEXP\" ou \"FULLTEXT\"), "
+#~ "algorithme de pertinence, mise en surbrillance des mots recherchés, "
+#~ "pagination, affichage paramétrable..."
+#~ msgstr ""
+#~ "Several types of research (\"LIKE\", \"REGEXP\" or \"FULLTEXT\"), "
+#~ "relevancy algorithm, highlighting search terms, pagination, configurable "
+#~ "display ..."
+
+#~ msgid "Blocs à afficher"
+#~ msgstr "Block to display"
+
+#~ msgid "Affichage de la date ?"
+#~ msgstr "Display date?"
+
+#~ msgid "Affichage du nom de l'auteur ?"
+#~ msgstr "Display author name?"
+
+#~ msgid "Affichage du nombre de commentaires ?"
+#~ msgstr "Display number of comments?"
+
+#~ msgid "Aucun des deux"
+#~ msgstr "Neither"
+
+#~ msgid "Extrait"
+#~ msgstr "The excerpt"
+
+#~ msgid "Extrait + \"Lire la suite...\""
+#~ msgstr "Excerpt + \"Read more...\""
+
+#~ msgid "Article complet"
+#~ msgstr "The article"
+
+#~ msgid "Affichage de l'article ou l'extrait ?"
+#~ msgstr "Show the article or the excerpt?"
+
+#~ msgid "Affichage de l'image à la Une ?"
+#~ msgstr "Display post thumbnails?"
+
+#~ msgid "Date - Auteur - Catégorie"
+#~ msgstr "Date - Author - Category"
+
+#~ msgid "Date - Catégorie - Auteur"
+#~ msgstr "Date - Category - Author"
+
+#~ msgid "Auteur - Date - Catégorie"
+#~ msgstr "Author - Date - Category"
+
+#~ msgid "Auteur - Catégorie - Date"
+#~ msgstr "Author - Category - Date"
+
+#~ msgid "Catégorie - Auteur - Date"
+#~ msgstr "Category - Author - Date"
+
+#~ msgid "Catégorie - Date - Auteur"
+#~ msgstr "Category - Date - Author"
+
+#~ msgid "Style des blocs"
+#~ msgstr "Blocks style"
+
+#~ msgid "Style CSS pour les blocs"
+#~ msgstr "Block stylesheet CSS"
+
+#~ msgid "Formatage de la date (si active)"
+#~ msgstr "Date format (if enabled)"
+
+#~ msgid ""
+#~ "<a href=\"http://php.net/manual/fr/function.date.php\" target=\"_blank"
+#~ "\">Voir documentation PHP sur les dates</a> (exemple : \"l j F Y\" pour "
+#~ "\"mardi 25 juin 2013\")"
+#~ msgstr ""
+#~ "<a href=\"http://php.net/manual/fr/function.date.php\" target=\"_blank"
+#~ "\">See the documentation of PHP about dates</a> (for example: \"l, F j, Y"
+#~ "\" to \"Tuesday, June 25, 2013\")"
+
+#~ msgid "Affichage du nombre de résultats ?"
+#~ msgstr "Display number of results?"
+
+#~ msgid "Numéroter les résultats ?"
+#~ msgstr "Number the search results?"
+
+#~ msgid "Thèmes et styles"
+#~ msgstr "Templates and styles"
+
+#~ msgid "Options des SERP"
+#~ msgstr "Display options"
+
+#~ msgid "Autocomplétion"
+#~ msgstr "Autocompletion"
+
+#~ msgid "Tout"
+#~ msgstr "All"
+
+#~ msgid ""
+#~ "<strong>WP-Advanced-Search</strong> permet d'activer une pagination "
+#~ "personnalisable."
+#~ msgstr ""
+#~ "<strong>WP-Advanced-Search</strong> enables a powerful search engine for "
+#~ "WordPress."
+
+#~ msgid "Options pour la pagination"
+#~ msgstr "Options for pagination"
+
+#~ msgid "Options de pagination"
+#~ msgstr "Pagination settings"
+
+#~ msgid "Publié par "
+#~ msgstr "Published by"
+
+#~ msgid "Publié dans "
+#~ msgstr "Published in"
+
+#~ msgid "Bleu"
+#~ msgstr "Blue"
+
+#~ msgid "Rouge"
+#~ msgstr "Red"
+
+#~ msgid "Vert"
+#~ msgstr "Green"
+
+#~ msgid "Gris"
+#~ msgstr "Grey"
+
+#~ msgid "Noir"
+#~ msgstr "Black"
+
+#~ msgid "Blanc"
+#~ msgstr "White"
+
+#~ msgid "Blanc (discret)"
+#~ msgstr "White (sober)"
+
+#~ msgid "Paramètres de l'extension"
+#~ msgstr "Plugin settings"
+
+#~ msgid "Ordre et options d'affichage"
+#~ msgstr "Display order"
+
+#~ msgid "Aucun résultat, veuillez effectuer une autre recherche !"
+#~ msgstr "No results, please try another search!"
+
+#~ msgid "Prochains événements"
+#~ msgstr "Next events"
+
+#~ msgid "WP-Planification-ReadMore"
+#~ msgstr "WP-Planification-ReadMore"
+
+#~ msgid "Aucun événement"
+#~ msgstr "No event"
+
+#~ msgid "Aucun événement pour le moment"
+#~ msgstr "No event now"
+
+#~ msgid ""
+#~ "<strong>WP-Planification</strong> est un plugin permettant d'afficher des "
+#~ "publications futures comme bon vous semble."
+#~ msgstr ""
+#~ "<strong>WP-Planification</strong> is a plugin for displaying scheduled "
+#~ "publications as you wish."
+
+#~ msgid ""
+#~ "Le fonctionnement est simple : il suffit de <strong>planifier une date de "
+#~ "publication à venir</strong> pour que la page ou l'article soit affiché "
+#~ "par le plugin (widget ou shortcode selon votre choix)."
+#~ msgstr ""
+#~ "Operation is simple: just <strong>schedule a release date coming</strong> "
+#~ "for the page or post is displayed by the plugin (widget or shortcode)."
+
+#~ msgid ""
+#~ "Ajoutez librement la date (ou non), le lien (ou non), un contenu (page ou "
+#~ "article) ou un extrait (ou non) ainsi qu'une image à la Une (ou non)..."
+#~ msgstr ""
+#~ "Add as you want the date (or not), the link (or not), the content (page "
+#~ "or article) or the excerpt (or not) or a post thumbnails (or not) ..."
+
+#~ msgid "Deux options d'utilisation :"
+#~ msgstr "Two options:"
+
+#~ msgid "<strong>Widget</strong> entièrement modulable"
+#~ msgstr "<strong>Widget</strong> fully configurable"
+
+#~ msgid ""
+#~ "<strong>Shortcode [planification]</strong> à ajouter dans les articles ou "
+#~ "pages"
+#~ msgstr "<strong>Shortcode [planification]</strong> to add in posts or pages"
+
+#~ msgid "Afficher le bloc de planification"
+#~ msgstr "Display the scheduled block"
+
+#~ msgid "Titre du bloc (shortcode)"
+#~ msgstr "Block title (for shortcode)"
+
+#~ msgid "Options d'affichage"
+#~ msgstr "Display options"
+
+#~ msgid "Date-Titre seul"
+#~ msgstr "Only Date-Title"
+
+#~ msgid "Extrait-Article seul"
+#~ msgstr "Only Excerpt-Article"
+
+#~ msgid "Image seule"
+#~ msgstr "Only post thumbnails"
+
+#~ msgid "Date-Titre => Extrait-Article"
+#~ msgstr "Date-Title => Excerpt-Article"
+
+#~ msgid "Extrait-Article => Date-Titre"
+#~ msgstr "Excerpt-Article => Date-Title"
+
+#~ msgid "Date-Titre => Image"
+#~ msgstr "Date-Title => Image"
+
+#~ msgid "Image => Date-Titre"
+#~ msgstr "Image => Date-Title"
+
+#~ msgid "Image => Extrait-Article"
+#~ msgstr "Image => Excerpt-Article"
+
+#~ msgid "Date-Titre => Image => Extrait-Article"
+#~ msgstr "Date-Title => Image => Excerpt-Article"
+
+#~ msgid "Date-Titre => Extrait-Article => Image"
+#~ msgstr "Date-Title => Excerpt-Article => Image"
+
+#~ msgid "Extrait-Article => Date-Titre => Image"
+#~ msgstr "Excerpt-Article => Date-Title => Image"
+
+#~ msgid "Extrait-Article => Image => Date-Titre"
+#~ msgstr "Excerpt-Article => Image => Date-Title"
+
+#~ msgid "Image => Date-Titre => Extrait-Article"
+#~ msgstr "Image => Date-Title => Excerpt-Article"
+
+#~ msgid "Image => Extrait-Article => Date-Titre"
+#~ msgstr "Image => Excerpt-Article => Date-Title"
+
+#~ msgid "Ne rien afficher..."
+#~ msgstr "No display ..."
+
+#~ msgid "Date + Lien"
+#~ msgstr "Date + Link"
+
+#~ msgid "Lien + Date"
+#~ msgstr "Link + Date"
+
+#~ msgid "Date seule"
+#~ msgstr "Only date"
+
+#~ msgid "Lien seul"
+#~ msgstr "Only link or text"
+
+#~ msgid "Afficher un lien \"Lire la suite...\""
+#~ msgstr "Show a link \"Read more ...\""
+
+#~ msgid "Texte du \"Lire la suite...\" (si actif)"
+#~ msgstr "Text for the \"Read more ...\" (if enabled)"
+
+#~ msgid "Activer les images à la Une pour afficher la vignette"
+#~ msgstr "Enable post thumbnails to show the image"
+
+#~ msgid ""
+#~ "N.B. : add_theme_support('post-thumbnails'); dans functions.php pour "
+#~ "activer l'option"
+#~ msgstr ""
+#~ "NB: add_theme_support ('post-thumbnails') in functions.php to enable"
+
+#~ msgid "Mise en page HTML"
+#~ msgstr "HTML Layout"
+
+#~ msgid "Séparateur entre la date et le titre *"
+#~ msgstr "Separator between the date and the title *"
+
+#~ msgid "Séparateur pour l'article ou l'extrait *"
+#~ msgstr "Separator for the article or the excerpt *"
+
+#~ msgid "Séparateur pour l'image à la Une *"
+#~ msgstr "Separator for the post thumbnails *"
+
+#~ msgid "* Code HTML accepté"
+#~ msgstr "* HTML accepted"
+
+#~ msgid "Balises d'encadrement du conteneur général"
+#~ msgstr "Tags for the global block"
+
+#~ msgid "Balises d'encadrement du bloc \"Date + Titre\""
+#~ msgstr "Tags for the block \"Date + Title\""
+
+#~ msgid "Balises d'encadrement de la date"
+#~ msgstr "Tags for the dates:"
+
+#~ msgid "Balises d'encadrement du texte (lien)"
+#~ msgstr "Tags for the text or link"
+
+#~ msgid "Remplacer \"a\" pour rendre le lien inactif..."
+#~ msgstr "Replace \"a\" to make the link active ..."
+
+#~ msgid "Balises d'encadrement du contenu ou de l'extrait"
+#~ msgstr "Tags for the content or the excerpt"
+
+#~ msgid "Balises d'encadrement du \"Lire la suite...\""
+#~ msgstr "Tags for the text \"read more ...\""
+
+#~ msgid "Balises d'encadrement de l'image à la Une"
+#~ msgstr "Tags for the post thumbnails"
+
+#~ msgid "Faire un \"clear\" après le bloc ?"
+#~ msgstr "Add a \"clear\" after the block ?"
+
+#~ msgid "post"
+#~ msgstr "post"
+
+#~ msgid "page"
+#~ msgstr "page"
+
+#~ msgid "Les deux"
+#~ msgstr "Both"
+
+#~ msgid "Colonne cible"
+#~ msgstr "Target Column"
+
+#~ msgid "post_date"
+#~ msgstr "post_date"
+
+#~ msgid "post_date_gmt"
+#~ msgstr "post_date_gmt"
+
+#~ msgid "Colonne utilisée pour le classement"
+#~ msgstr "Order Column"
+
+#~ msgid "Ordre d'affichage"
+#~ msgstr "Display order"
+
+#~ msgid "Affichage si aucune publication future n'existe"
+#~ msgstr "Display if there is no scheduled publication"
+
+#~ msgid "Phrase affichée si aucune planification *"
+#~ msgstr "Text if there is no scheduled publication *"
+
+#~ msgid ""
+#~ "* Laisser les deux champs vides pour masquer le bloc quand aucune "
+#~ "planification n'existe"
+#~ msgstr ""
+#~ "* Leave both fields blank to hide the block when nothing is scheduled"
+
+#~ msgid "Ajout de la feuille de style par défaut ?"
+#~ msgstr "Add stylesheet CSS by défault ?"
+
+#~ msgid "Aucune feuille"
+#~ msgstr "No CSS"
+
+#~ msgid "Feuille vide personnalisable (style-empty.css)"
+#~ msgstr "Empty CSS customizable (style-empty.css)"
+
+#~ msgid "Style sobre"
+#~ msgstr "Sober style"
+
+#~ msgid "Dominante en noir"
+#~ msgstr "Dominant color black"
+
+#~ msgid "Dominante en gris"
+#~ msgstr "Dominant color grey"
+
+#~ msgid "Dominante en bleu"
+#~ msgstr "Dominant color blue"
+
+#~ msgid "Dominante en rouge"
+#~ msgstr "Dominant color red"
+
+#~ msgid "Dominante en vert"
+#~ msgstr "Dominant color green"
+
+#~ msgid "Dominante en noir sans bordures"
+#~ msgstr "Dominant color black without border"
+
+#~ msgid "Dominante en gris sans bordures"
+#~ msgstr "Dominant color grey without border"
+
+#~ msgid "Dominante en bleu sans bordures"
+#~ msgstr "Dominant color blue without border"
+
+#~ msgid "Dominante en rouge sans bordures"
+#~ msgstr "Dominant color red without border"
+
+#~ msgid "Dominante en vert sans bordures"
+#~ msgstr "Dominant color green without border"
+
+#~ msgid "Classe du bloc global"
+#~ msgstr "Global block - Class CSS"
+
+#~ msgid "Classe du bloc \"date + lien...\""
+#~ msgstr "Block \"date + link\" - Class CSS"
+
+#~ msgid "Classe de la date"
+#~ msgstr "Dates - Class CSS"
+
+#~ msgid "Classe du lien (URL) ou du texte"
+#~ msgstr "Link or text - Class CSS"
+
+#~ msgid "Classe du bloc \"Lire la suite...\""
+#~ msgstr "Block \"date + link\" - Class CSS"
+
+#~ msgid "Classe de l'image à la Une"
+#~ msgstr "Class of the post thumbnails"
+
+#~ msgid "WP-Planification"
+#~ msgstr "WP-Planification"
+
+#~ msgid ""
+#~ "Afficher des publications et événements futurs (en cas de planification "
+#~ "d'articles ou de pages)"
+#~ msgstr ""
+#~ "Show publications and future events (for scheduled articles or pages)"
+
+#~ msgid "Consultez la page de réglages pour tout paramétrer en détail..."
+#~ msgstr "Check the settings page to set everything in detail ..."
+
+#~ msgid "Titre"
+#~ msgstr "Title"
+
+#~ msgid "1"
+#~ msgstr "1"
+
+#~ msgid "l j F Y"
+#~ msgstr "l j F Y"
+
+#~ msgid " : "
+#~ msgstr " : "
+
+#~ msgid "div"
+#~ msgstr "div"
+
+#~ msgid "p"
+#~ msgstr "p"
+
+#~ msgid "span"
+#~ msgstr "span"
+
+#~ msgid "ASC"
+#~ msgstr "ASC"
+
+#~ msgid "Style CSS défini ?"
+#~ msgstr "Default stylesheet ?"
+
+#~ msgid "Voir documentation PHP sur les dates"
+#~ msgstr "See the documentation of PHP about dates"
+
+#~ msgid "(ex : \"l j F Y\" pour \"mardi 25 juin 2013\")"
+#~ msgstr "(for example: \"l, F j, Y\" to \"Tuesday, June 25, 2013\")"
+
+#~ msgid "Séparateur"
+#~ msgstr "Separator"
+
+#~ msgid "Code HTML accepté"
+#~ msgstr "HTML accepted"
+
+#~ msgid "Balises d'encadrement du bloc"
+#~ msgstr "Tags for the global block:"
+
+#~ msgid "(div, section, aside...)"
+#~ msgstr "(div, section, aside...)"
+
+#~ msgid "Balises du bloc \"Date + Lien\""
+#~ msgstr "Tags for the block \"Date + Title\":"
+
+#~ msgid "Si aucun événément"
+#~ msgstr "If no event..."
+
+#~ msgid "Titre si aucun événement"
+#~ msgstr "Title if no event"
+
+#~ msgid "Phrase si aucun événement"
+#~ msgstr "Text if no event"
+
+#~ msgid "Ordre d\\affichage"
+#~ msgstr "Display order"
+
+#~ msgid "Balises d'encadrement de la date :"
+#~ msgstr "Tags for the dates:"
+
+#~ msgid ""
+#~ "Laisser vide pour tout afficher (ou au choix : post, page, attachment...)"
+#~ msgstr "Let blank to show all (or choice: post, page, attachment...)"
+
+#~ msgid "Colonne cible : "
+#~ msgstr "Target Column:"

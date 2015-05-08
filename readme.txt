@@ -6,8 +6,8 @@ Plugin URI: http://wordpress.org/extend/plugins/modal-portfolio/
 Tags: portfolio, port folio, gallery, galleries, portfolios, galerie, galeries, description, content, contenu, text, texte, options, option, modal, modale, popup, popin, pop-up, pop-in, window, fen&ecirc;tre, shortcode, shortcodes, jquery, title, titre, photo, photos, image, images, filter, filters, filtre, filtres, filtrage, category, categories, multiple, cat&eacute;gorie, cat&eacute;gories, sub-category, sub-categories, subcategorie, subcategories, sous-cat&eacute;gorie, sous-cat&eacute;gories, masquage, hidden, tri, sort, sorting, triage, trier
 License: GPLv2 or later
 Requires at least: 3.5
-Tested up to: 4.2.1
-Stable Tag: 1.1
+Tested up to: 4.2.2
+Stable Tag: 1.2
 
 "Modal Portfolio" permet d'afficher des galeries d'images filtr&eacute;es avec titre et description dans une modale à l'aide d'un shortcode (avec options). ("Modal Portfolio" displays image galleries filtered with title and description in a modal using some shortcodes)
 
@@ -53,7 +53,11 @@ The extension should receive several graphic themes or even the ability to edit 
 
 == Changelog ==
 
-= Version 1.0 (28/04/2013) =
+= Version 1.2 (08/05/2015) =
+- Correction de bugs avec l'usage du plugin sans cat&eacute;gorie (fix several problems with the usage of the plugin without categories)
+- Am&eacute;lioration de l'affichage des vignettes (better display for the thumbnails effects)
+
+= Version 1.1 (28/04/2015) =
 - Premi&egrave;re version du shortcode [modal-portfolio] (first version of the [modal-portfolio] shortcode)
 - Page d'options pour r&eacute;gler le portfolio (settings page added)
 - Ajout d'un syst&egrave;me de traduction en fran&ccedil;ais et anglais par d&eacute;faut (translation in English and French by default)

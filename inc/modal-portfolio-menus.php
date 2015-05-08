@@ -33,7 +33,7 @@ function custom_post_type() {
     );
     register_post_type('portfolio', $args);
 }
-add_action( 'init', 'custom_post_type', 0 );
+add_action('init', 'custom_post_type', 0);
  
 // Ajout de l'item Catégories pour gérer les portfolios
 function portfolio_category() {

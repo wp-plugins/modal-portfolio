@@ -138,48 +138,48 @@ function modal_portfolio_options() {
         <h4><?php _e('Paramétrage général', 'modal-portfolio'); ?></h4>
         <p class="tr">
             <select name="modal_portfolio_filters" id="modal_portfolio_filters">
-                <option value="1" <?php if(get_option("modal_portfolio_filters") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui'); ?></option>
-                <option value="0" <?php if(get_option("modal_portfolio_filters") == false) { echo 'selected="selected"'; } ?>><?php _e('Non'); ?></option>
+                <option value="1" <?php if(get_option("modal_portfolio_filters") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui', 'modal-portfolio'); ?></option>
+                <option value="0" <?php if(get_option("modal_portfolio_filters") == false) { echo 'selected="selected"'; } ?>><?php _e('Non', 'modal-portfolio'); ?></option>
             </select>
             <label for="modal_portfolio_filters"><strong><?php _e('Afficher les filtres ?', 'modal-portfolio'); ?></strong></label>
             <br/><em><?php _e('L\'option permet de masquer les filtres de catégories des portfolios.', 'modal-portfolio'); ?></em>
         </p>
         <p class="tr">
             <select name="modal_portfolio_allFilter" id="modal_portfolio_allFilter">
-                <option value="1" <?php if(get_option("modal_portfolio_allFilter") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui'); ?></option>
-                <option value="0" <?php if(get_option("modal_portfolio_allFilter") == false) { echo 'selected="selected"'; } ?>><?php _e('Non'); ?></option>
+                <option value="1" <?php if(get_option("modal_portfolio_allFilter") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui', 'modal-portfolio'); ?></option>
+                <option value="0" <?php if(get_option("modal_portfolio_allFilter") == false) { echo 'selected="selected"'; } ?>><?php _e('Non', 'modal-portfolio'); ?></option>
             </select>
             <label for="modal_portfolio_allFilter"><strong><?php _e('Afficher le filtre "Tout" ?', 'modal-portfolio'); ?></strong></label>
             <br/><em><?php _e('L\'option permet de masquer le filtre qui affiche toutes les références.', 'modal-portfolio'); ?></em>
         </p>
         <p class="tr">
             <select name="modal_portfolio_text_modal" id="modal_portfolio_text_modal">
-                <option value="1" <?php if(get_option("modal_portfolio_text_modal") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui'); ?></option>
-                <option value="0" <?php if(get_option("modal_portfolio_text_modal") == false) { echo 'selected="selected"'; } ?>><?php _e('Non'); ?></option>
+                <option value="1" <?php if(get_option("modal_portfolio_text_modal") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui', 'modal-portfolio'); ?></option>
+                <option value="0" <?php if(get_option("modal_portfolio_text_modal") == false) { echo 'selected="selected"'; } ?>><?php _e('Non', 'modal-portfolio'); ?></option>
             </select>
             <label for="modal_portfolio_text_modal"><strong><?php _e('Afficher la description dans la fenêtre modale ?', 'modal-portfolio'); ?></strong></label>
             <br/><em><?php _e('L\'option permet de modifier la fenêtre modale pour afficher l\'image avec ou sans description.', 'modal-portfolio'); ?></em>
         </p>
         <p class="tr">
             <select name="modal_portfolio_title_modal" id="modal_portfolio_title_modal">
-                <option value="1" <?php if(get_option("modal_portfolio_title_modal") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui'); ?></option>
-                <option value="0" <?php if(get_option("modal_portfolio_title_modal") == false) { echo 'selected="selected"'; } ?>><?php _e('Non'); ?></option>
+                <option value="1" <?php if(get_option("modal_portfolio_title_modal") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui', 'modal-portfolio'); ?></option>
+                <option value="0" <?php if(get_option("modal_portfolio_title_modal") == false) { echo 'selected="selected"'; } ?>><?php _e('Non', 'modal-portfolio'); ?></option>
             </select>
             <label for="modal_portfolio_title_modal"><strong><?php _e('Afficher le titre dans la fenêtre modale ?', 'modal-portfolio'); ?></strong></label>
             <br/><em><?php _e('L\'option permet de modifier la fenêtre modale pour afficher l\'image avec ou sans titre.', 'modal-portfolio'); ?></em>
         </p>
 		<p class="tr">
             <select name="modal_portfolio_title_thumbnail" id="modal_portfolio_title_thumbnail">
-                <option value="1" <?php if(get_option("modal_portfolio_title_thumbnail") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui'); ?></option>
-                <option value="0" <?php if(get_option("modal_portfolio_title_thumbnail") == false) { echo 'selected="selected"'; } ?>><?php _e('Non'); ?></option>
+                <option value="1" <?php if(get_option("modal_portfolio_title_thumbnail") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui', 'modal-portfolio'); ?></option>
+                <option value="0" <?php if(get_option("modal_portfolio_title_thumbnail") == false) { echo 'selected="selected"'; } ?>><?php _e('Non', 'modal-portfolio'); ?></option>
             </select>
             <label for="modal_portfolio_title_thumbnail"><strong><?php _e('Afficher le titre et la catégorie au survol des vignettes ?', 'modal-portfolio'); ?></strong></label>
             <br/><em><?php _e('L\'option permet de masquer les effets de texte au survol des vignettes.', 'modal-portfolio'); ?></em>
         </p>
 		<p class="tr">
             <select name="modal_portfolio_close_button" id="modal_portfolio_close_button">
-                <option value="1" <?php if(get_option("modal_portfolio_close_button") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui'); ?></option>
-                <option value="0" <?php if(get_option("modal_portfolio_close_button") == false) { echo 'selected="selected"'; } ?>><?php _e('Non'); ?></option>
+                <option value="1" <?php if(get_option("modal_portfolio_close_button") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui', 'modal-portfolio'); ?></option>
+                <option value="0" <?php if(get_option("modal_portfolio_close_button") == false) { echo 'selected="selected"'; } ?>><?php _e('Non', 'modal-portfolio'); ?></option>
             </select>
             <label for="modal_portfolio_close_button"><strong><?php _e('Afficher le bouton "Fermer" dans la fenêtre modale ?', 'modal-portfolio'); ?></strong></label>
             <br/><em><?php _e('L\'option permet de masquer le bouton de fermeture.', 'modal-portfolio'); ?></em>
@@ -205,8 +205,8 @@ function modal_portfolio_options() {
         </p>
         <p class="tr">
             <select name="modal_portfolio_overlayCloseClick" id="modal_portfolio_overlayCloseClick">
-                <option value="1" <?php if(get_option("modal_portfolio_overlayCloseClick") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui'); ?></option>
-                <option value="0" <?php if(get_option("modal_portfolio_overlayCloseClick") == false) { echo 'selected="selected"'; } ?>><?php _e('Non'); ?></option>
+                <option value="1" <?php if(get_option("modal_portfolio_overlayCloseClick") == true) { echo 'selected="selected"'; } ?>><?php _e('Oui', 'modal-portfolio'); ?></option>
+                <option value="0" <?php if(get_option("modal_portfolio_overlayCloseClick") == false) { echo 'selected="selected"'; } ?>><?php _e('Non', 'modal-portfolio'); ?></option>
             </select>
             <label for="modal_portfolio_overlayCloseClick"><strong><?php _e('Fermer la modale en cliquant sur le fond (overlay) ?', 'modal-portfolio'); ?></strong></label>
             <br/><em><?php _e('L\'option permet de fermer la fenêtre modale sans appuyer sur le bouton "Fermer"', 'modal-portfolio'); ?></em>

@@ -30,6 +30,17 @@ function modal_portfolio_shortcode($args) {
 	// Filtrage de la catégorie (récupération de l'ID courant)
 	$allfilters = get_terms('project-cat');
 
+	// Vérifie qu'il n'y a aucun filtre enfant
+	foreach($allfilters as $filter) {
+		$verif = array();
+		if($filter->parent != 0) {
+			$verif = $filter;
+		}
+	}
+	if(empty($verif)) {
+		$parents = true;
+	}
+	
 	// Récupérer l'ID de la catégorie parente
 	foreach($allfilters as $filter) {
 		// Si on ne garde que les catégories enfants
@@ -60,7 +71,9 @@ function modal_portfolio_shortcode($args) {
 			);
 			$filters = get_terms('project-cat', $args);
 		} else {
-			$filters = $filtersWithoutParents;
+			if($filter->parent != 0) {
+				$filters = $filtersWithoutParents;
+			}
 		}
 	} else {
 		if(isset($IDcat) && !empty($IDcat)) {
@@ -74,6 +87,7 @@ function modal_portfolio_shortcode($args) {
 			$filters = $allfilters;
 		}
 	}
+
 	// Filtrage final (après tri et sélection des catégories restantes)
 	foreach($filters as $filter) {
 		$content.= '<button class="button" data-filter=".'.$filter->slug.'">'.$filter->name.'</button>'."\n";
@@ -90,7 +104,7 @@ function modal_portfolio_shortcode($args) {
 		'post_type' => 'portfolio'
 	);
 	$portfolioPosts = get_posts($atts);
-
+	
 	// Catégorie parente (si désirée)
 	if($parents == true || $parents == 1) {
 		$parentTerm = get_terms('project-cat', array("include" => $IDcat));
@@ -100,48 +114,59 @@ function modal_portfolio_shortcode($args) {
 	$allPosts = array();
 	foreach($portfolioPosts as $posts) {
 		$filter = wp_get_post_terms($posts->ID, 'project-cat');
-		foreach($filter as $filtre) {
-			// Récupère la totalité des ID de filtres utiles (parents + enfants)
-			$totalIds[$posts->ID][] = $filtre->term_id;
-			
-			// Permet de récupérer uniquement les informations nécessaires
-			if(isset($IDcat) && !empty($IDcat)) {
-				if($filtre->parent == $IDcat || in_array($filtre->parent, $IDs)) {
-					// On dédoublonne les ID doubles !
-					if(!array_key_exists($posts->ID, $allPosts)) {
-						$allPosts[$posts->ID] = (array)$posts;
-					}
-					// On ajoute les informations de filtres dans les "posts"
-					$allPosts[$posts->ID]['categories'] = $filter;
-					
-					// S'il faut afficher les catégories parentes
-					if($parents == true || $parents == 1) {
-						// On ajoute les informations de la catégorie parente
-						if(!in_array($filtre->parent, $totalIds[$posts->ID])) {
-							$allPosts[$posts->ID]['categories'][] = $parentTerm[0];
+		if(!empty($filter)) {
+			foreach($filter as $filtre) {
+				// Récupère la totalité des ID de filtres utiles (parents + enfants)
+				$totalIds[$posts->ID][] = $filtre->term_id;
+				
+				// Permet de récupérer uniquement les informations nécessaires
+				if(isset($IDcat) && !empty($IDcat)) {
+					if($filtre->parent == $IDcat || in_array($filtre->parent, $IDs)) {
+						// On dédoublonne les ID doubles !
+						if(!array_key_exists($posts->ID, $allPosts)) {
+							$allPosts[$posts->ID] = (array)$posts;
+						}
+						// On ajoute les informations de filtres dans les "posts"
+						$allPosts[$posts->ID]['categories'] = $filter;
+						
+						// S'il faut afficher les catégories parentes
+						if($parents == true || $parents == 1) {
+							// On ajoute les informations de la catégorie parente
+							if(!in_array($filtre->parent, $totalIds[$posts->ID])) {
+								$allPosts[$posts->ID]['categories'][] = $parentTerm[0];
+							}
 						}
 					}
-				}
-			} else {
-				if($filtre->parent != 0) {
-					// Récupération de toutes les références
-					$allPosts[$posts->ID] = (array)$posts;
+				} else {
+					if($filtre->parent != 0) {
+						// Récupération de toutes les références
+						$allPosts[$posts->ID] = (array)$posts;
 
-					// On ajoute les informations de filtres dans les "posts"
-					$allPosts[$posts->ID]['categories'] = $filter;
-					
-					// S'il faut afficher les catégories parentes
-					if($parents == true || $parents == 1) {
-						// On ajoute les informations de la catégorie parente
-						if(!in_array($filtre->parent, $totalIds[$posts->ID])) {
-							$allPosts[$posts->ID]['categories'][] = $parentTerm[0];
+						// On ajoute les informations de filtres dans les "posts"
+						$allPosts[$posts->ID]['categories'] = $filter;
+						
+						// S'il faut afficher les catégories parentes
+						if($parents == true || $parents == 1) {
+							// On ajoute les informations de la catégorie parente
+							if(!in_array($filtre->parent, $totalIds[$posts->ID])) {
+								$allPosts[$posts->ID]['categories'][] = $parentTerm[0];
+							}
+						}
+					} else {
+						if($filtre->parent == 0 && ($parents == true || $parents == 1)) {
+							$allPosts[$posts->ID] = (array)$posts;
+							$allPosts[$posts->ID]['categories'] = $filter;
 						}
 					}
 				}
 			}
+		} else {
+			$allPosts[] = (array) $posts;
 		}
 	}	
-
+echo "<pre>";
+//print_r($allPosts);
+echo "</pre>";
 	// On boucle pour afficher chaque item du portfolio
 	$nb = 1;
 	foreach($allPosts as $posts) {	
@@ -149,12 +174,14 @@ function modal_portfolio_shortcode($args) {
 		$title_portfolio = get_post_meta($posts['ID'], 'portfolio_title', true);
 		$slugs = "";
 		$names = "";
-		foreach($posts['categories'] as $categorie) {
-			$slugs.= $categorie->slug." ";
-			$names.= $categorie->name.", ";
+		if(!empty($posts['categories'])) {
+			foreach($posts['categories'] as $categorie) {
+				$slugs.= $categorie->slug." ";
+				$names.= $categorie->name.", ";
+			}
+			$slugs = substr($slugs, 0, -1);
+			$names = substr($names, 0, -2);
 		}
-		$slugs = substr($slugs, 0, -1);
-		$names = substr($names, 0, -2);
 		
 		$content.= display_shortcode_html($posts, $slugs, $names, $title_portfolio, $nb);
 		$nb++;
@@ -174,11 +201,17 @@ function display_shortcode_html($posts, $slugs, $names, $title_portfolio = '', $
 	// Affichage conditionnel des effets de texte au survol
 	if(get_option("modal_portfolio_title_thumbnail") == true) {
 		$content.= '<div class="ref-label">'."\n";
+		if(!empty($title_portfolio) || !empty($names)) {
 		$content.= '<div class="ref-label-text">'."\n";
-		$content.= '<div class="ref-text-title">'.$title_portfolio.'</div>'."\n";
-		$content.= '<div class="ref-text-category">'.$names.'</div>'."\n";
-		$content.= '</div>'."\n";
-		$content.= '<div class="ref-label-bg"></div>'."\n";
+			if(!empty($title_portfolio)) {
+			$content.= '<div class="ref-text-title">'.$title_portfolio.'</div>'."\n";
+			}
+			if(!empty($names)) {
+			$content.= '<div class="ref-text-category">'.$names.'</div>'."\n";
+			}
+			$content.= '</div>'."\n";
+			$content.= '<div class="ref-label-bg"></div>'."\n";
+		}
 		$content.= '</div>'."\n";
 	}
 	
@@ -204,7 +237,7 @@ function display_shortcode_html($posts, $slugs, $names, $title_portfolio = '', $
 	
 	// Affichage conditionnel du bouton de fermeture
 	if(get_option("modal_portfolio_close_button") == true) {
-		$content.= '<div class="modal-close"><button class="simplemodal-close">'.__('Fermer').'</button></div>'."\n";
+		$content.= '<div class="modal-close"><button class="simplemodal-close">'.__('Fermer', 'modal-portfolio').'</button></div>'."\n";
 	}
 	
 	$content.= '<div class="clear"></div>'."\n";

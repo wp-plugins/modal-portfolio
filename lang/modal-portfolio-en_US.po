@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modal-portfolio\n"
-"POT-Creation-Date: 2015-04-30 10:30+0100\n"
-"PO-Revision-Date: 2015-04-30 10:31+0100\n"
+"POT-Creation-Date: 2015-05-08 11:44+0100\n"
+"PO-Revision-Date: 2015-05-08 11:44+0100\n"
 "Last-Translator: Mathieu Chartier <mathieu.chartier@internet-formation.fr>\n"
 "Language-Team: Mathieu Chartier <mathieu.chartier@internet-formation.fr>\n"
 "Language: en_US\n"
@@ -612,7 +612,7 @@ msgstr "Select the number of milliseconds for the second useful effect."
 msgid "Tous"
 msgstr "All"
 
-#: ../inc/modal-portfolio-shortcode.php:207
+#: ../inc/modal-portfolio-shortcode.php:240
 msgid "Fermer"
 msgstr "Close"
 

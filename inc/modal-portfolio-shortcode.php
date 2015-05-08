@@ -37,7 +37,7 @@ function modal_portfolio_shortcode($args) {
 			$verif = $filter;
 		}
 	}
-	if(empty($verif)) {
+	if(empty($verif) && $parents == false) {
 		$parents = true;
 	}
 	
@@ -46,11 +46,11 @@ function modal_portfolio_shortcode($args) {
 		// Si on ne garde que les catégories enfants
 		if($parents == false || $parents == 0) {
 			// Ajoute uniquement les catégories enfants dans un tableau
-			if($filter->parent != 0) {
+			if($filter->parent != 0 && empty($catParente)) {
 				$filtersWithoutParents[] = $filter;
 			}
 		}
-		
+
 		// Si on doit récupérer uniquement les catégories enfants d'une catégorie
 		if($filter->slug == $catParente && $filter->parent == 0) {
 			$IDcat = $filter->term_id;
@@ -71,8 +71,10 @@ function modal_portfolio_shortcode($args) {
 			);
 			$filters = get_terms('project-cat', $args);
 		} else {
-			if($filter->parent != 0) {
+			if($filter->parent != 0 && empty($catParente)) {
 				$filters = $filtersWithoutParents;
+			} else {
+				$filters = array();
 			}
 		}
 	} else {
@@ -138,7 +140,7 @@ function modal_portfolio_shortcode($args) {
 						}
 					}
 				} else {
-					if($filtre->parent != 0) {
+					if($filtre->parent != 0 && empty($catParente)) {
 						// Récupération de toutes les références
 						$allPosts[$posts->ID] = (array)$posts;
 

@@ -3,13 +3,13 @@
  * Plugin Name: Modal Portfolio
  * Plugin URI: http://www.internet-formation.fr
  * Description: Portfolio avec photos, description, titre et filtres en responsive avec de multiples options (responsive portfolio with images, description, title and filters (with multiple settings)
- * Version: 1.2.1
+ * Version: 1.2.2
  * Author: Mathieu Chartier
  * Author URI: http://www.mathieu-chartier.com
 */
 // Version du plugin
 global $modal_portfolio_version;
-$modal_portfolio_version = "1.2.1";
+$modal_portfolio_version = "1.2.2";
 
 // Gestion des langues
 function modal_portfolio_lang() {
@@ -90,8 +90,9 @@ add_theme_support('post-thumbnails');
 
 // Liste des scripts et CSS utiles
 function modal_portfolio_scripts() {
-    wp_enqueue_script('isotope', plugins_url().'/modal-portfolio/js/isotope.min.js', array(), '2.2.0', true);
-    wp_enqueue_script('simplemodal', plugins_url().'/modal-portfolio/js/jquery.simplemodal.1.4.4.min.js', array(), '1.4.4', true);
+    wp_enqueue_script('isotope', plugins_url().'/modal-portfolio/js/isotope.min.js', array('jquery'), '2.2.0', true);
+    wp_enqueue_script('simplemodal', plugins_url().'/modal-portfolio/js/jquery.simplemodal.1.4.4.min.js', array('jquery'), '1.4.4', true);
+	wp_enqueue_script("jquery-effects-core");
 	
 	// Variables passées au fichier portfolio.js
 	$params = array(
@@ -107,7 +108,7 @@ function modal_portfolio_scripts() {
 		'openUpDuration'	=> get_option("modal_portfolio_openUpDuration"),
 		'openDownDuration'	=> get_option("modal_portfolio_openDownDuration"),
 	);
-    wp_enqueue_script('portfolio-script', plugins_url().'/modal-portfolio/js/portfolio.js', array(), '1.0', true);
+    wp_enqueue_script('portfolio-script', plugins_url().'/modal-portfolio/js/portfolio.js', array('jquery'), '1.0', true);
 	wp_localize_script('portfolio-script', 'parametres', $params);
 
 	if(get_option('modal_portfolio_css_path') == plugins_url().'/modal-portfolio/css/portfolio.css') {

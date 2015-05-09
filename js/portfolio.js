@@ -12,7 +12,7 @@
 		var openDownEffect = parametres.openDownEffect;
 		var openUpDuration = parametres.openUpDuration;
 		var openDownDuration = parametres.openDownDuration;
-	
+
 		// Lancement de Isotope
         var $container = $('.isotope').isotope({
             itemSelector: '.element-item',
@@ -33,7 +33,7 @@
 		$('.element-item .modal').click(function(e) {
 			// Récupération de l'ID unique (pour chaque modale différenciée)
 			var item = $(this).attr("id");
-			
+
 			// Paramètres pour la modale
 			var options = {
 				overlayClose:overlayCloseClick,

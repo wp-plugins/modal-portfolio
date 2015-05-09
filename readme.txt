@@ -7,7 +7,7 @@ Tags: portfolio, port folio, gallery, galleries, portfolios, galerie, galeries, 
 License: GPLv2 or later
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable Tag: 1.2.1
+Stable Tag: 1.2.2
 
 "Modal Portfolio" permet d'afficher des galeries d'images filtr&eacute;es avec titre et description dans une modale à l'aide d'un shortcode (avec options). ("Modal Portfolio" displays image galleries filtered with title and description in a modal using some shortcodes)
 
@@ -53,7 +53,8 @@ The extension should receive several graphic themes or even the ability to edit 
 
 == Changelog ==
 
-= Version 1.2.1 (08/05/2015) =
+= Version 1.2.2 (09/05/2015) =
+- Ajout de jQuery Core Effects et Easing qui avaient &eacute;t&eacute; oubli&eacute;s (Adding jQuery Core effects)
 - Correction de bugs avec l'usage du plugin sans cat&eacute;gorie (fix several problems with the usage of the plugin without categories)
 - Am&eacute;lioration de l'affichage des vignettes (better display for the thumbnails effects)
 

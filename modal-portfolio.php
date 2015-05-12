@@ -3,13 +3,13 @@
  * Plugin Name: Modal Portfolio
  * Plugin URI: http://www.internet-formation.fr
  * Description: Portfolio avec photos, description, titre et filtres en responsive avec de multiples options (responsive portfolio with images, description, title and filters (with multiple settings)
- * Version: 1.2.2
+ * Version: 1.2.3
  * Author: Mathieu Chartier
  * Author URI: http://www.mathieu-chartier.com
 */
 // Version du plugin
 global $modal_portfolio_version;
-$modal_portfolio_version = "1.2.2";
+$modal_portfolio_version = "1.2.3";
 
 // Gestion des langues
 function modal_portfolio_lang() {
@@ -91,6 +91,7 @@ add_theme_support('post-thumbnails');
 // Liste des scripts et CSS utiles
 function modal_portfolio_scripts() {
     wp_enqueue_script('isotope', plugins_url().'/modal-portfolio/js/isotope.min.js', array('jquery'), '2.2.0', true);
+    wp_enqueue_script('image-loaded', plugins_url().'/modal-portfolio/js/imagesloaded.min.js', array('jquery'), '3.1.8', true);
     wp_enqueue_script('simplemodal', plugins_url().'/modal-portfolio/js/jquery.simplemodal.1.4.4.min.js', array('jquery'), '1.4.4', true);
 	wp_enqueue_script("jquery-effects-core");
 	

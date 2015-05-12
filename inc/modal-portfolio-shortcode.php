@@ -166,9 +166,7 @@ function modal_portfolio_shortcode($args) {
 			$allPosts[] = (array) $posts;
 		}
 	}	
-echo "<pre>";
-//print_r($allPosts);
-echo "</pre>";
+
 	// On boucle pour afficher chaque item du portfolio
 	$nb = 1;
 	foreach($allPosts as $posts) {	
@@ -197,7 +195,7 @@ echo "</pre>";
 // Fonction d'affichage (afin d'éviter les redondances d'utilisation)
 function display_shortcode_html($posts, $slugs, $names, $title_portfolio = '', $nb = 0) {
 	$content = '<div class="element-item transition '.$slugs.'" data-category="transition">'."\n";
-	$content.= '<div class="modal-portfolio modal" id="'.$posts['ID']."-".$nb.'">'."\n";
+	$content.= '<div class="modal-portfolio modal '.$slugs.'" id="'.$posts['ID']."-".$nb.'">'."\n";
 	$content.= get_the_post_thumbnail($posts['ID'], 'medium')."\n";
 	
 	// Affichage conditionnel des effets de texte au survol
@@ -219,6 +217,7 @@ function display_shortcode_html($posts, $slugs, $names, $title_portfolio = '', $
 	
 	$content.= '</div>'."\n";
 	$content.= '</div>'."\n";
+	
 	$content.= '<div class="hidden-modal modal-'.$posts['ID']."-".$nb.'">'."\n";
 	
 	// Affichage conditionnel du titre de la modale

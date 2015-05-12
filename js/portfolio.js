@@ -14,11 +14,18 @@
 		var openDownDuration = parametres.openDownDuration;
 
 		// Lancement de Isotope
-        var $container = $('.isotope').isotope({
-            itemSelector: '.element-item',
-            layoutMode: 'fitRows'
-        });
-		
+		var $container = $('.isotope').imagesLoaded(function() {
+			$container.isotope({
+				itemSelector: '.element-item',
+				layoutMode: 'fitRows'
+			});
+			//$container.isotope('layout');
+		});
+
+		$(window).on('load', function(){
+			$('.isotope').isotope('layout');
+		});
+
 		// Gestion des filtres Isotope
         $('#filters').on('click', 'button', function() {
             var filterValue = $(this).attr('data-filter');

@@ -103,6 +103,7 @@ function modal_portfolio_shortcode($args) {
 
 	// Récupération des "posts" du Portfolio
 	$atts = array(
+		'posts_per_page' => -1,
 		'post_type' => 'portfolio'
 	);
 	$portfolioPosts = get_posts($atts);

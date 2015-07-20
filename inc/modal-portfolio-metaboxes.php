@@ -1,7 +1,7 @@
 <?php
 // Gestion de la metabox personnalisée
 function add_portfolio_metabox() {
-	add_meta_box('portfolio_ref_title', __('Titre de la vignette'), 'portfolio_ref_title', 'portfolio', 'normal', 'high');
+	add_meta_box('portfolio_ref_title', __('Titre de la vignette', 'modal-portfolio'), 'portfolio_ref_title', 'portfolio', 'normal', 'high');
 }
 
 // Ajout du formulaire correspondant à la metabox personnalisée (callback)

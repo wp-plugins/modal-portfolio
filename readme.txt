@@ -20,7 +20,7 @@ The main feature of Modal Portfolio is to manage several categories of portfolio
 
 <p><em>En fran&ccedil;ais</em></p>
 <p><strong>Modal Portfolio</strong> fonctionne en anglais et en fran&ccedil;ais<br/>
-<strong>Modal Portfolio</strong> utilise le shortcode [modal-portfolio] (avec ou sans options) pour afficher des galeries d'images avec vidéo (optionnel), titre et description dans une modale. Beaucoup de param&egrave;tres sont disponibles pour optimiser l'affichage ainsi que des filtres d'affichage par cat&eacute;gorie.<br/><br/>
+<strong>Modal Portfolio</strong> utilise le shortcode [modal-portfolio] (avec ou sans options) pour afficher des galeries d'images avec vid&eacute;o (optionnel), titre et description dans une modale. Beaucoup de param&egrave;tres sont disponibles pour optimiser l'affichage ainsi que des filtres d'affichage par cat&eacute;gorie.<br/><br/>
 La principale particularit&eacute; de Modal Portfolio est de g&eacute;rer plusieurs cat&eacute;gories de portfolio avec des shortcodes diff&eacute;rents et personnalisables. Ainsi, vous pouvez avoir plusieurs portfolios selon les cat&eacute;gories choisies.</p>
 
 == Installation ==

@@ -4,15 +4,15 @@ function custom_post_type() {
     $labels = array(
         'name'                => __('Portfolio', 'modal-portfolio'),
         'singular_name'       => __('Portfolio', 'modal-portfolio'),
-        'all_items'           => __('Toutes les références', 'modal-portfolio'),
-        'view_item'           => __('Voir la référence', 'modal-portfolio'),
-        'add_new_item'        => __('Ajouter une référence', 'modal-portfolio'),
-        'add_new'             => __('Ajouter', 'modal-portfolio'),
-        'edit_item'           => __('Editer une référence', 'modal-portfolio'),
-        'update_item'         => __('Mettre à jour', 'modal-portfolio'),
-        'search_items'        => __('Rechercher une référence', 'modal-portfolio'),
-        'not_found'           => __('Aucun résultat', 'modal-portfolio'),
-        'not_found_in_trash'  => __('Aucun résultat dans la corbeille', 'modal-portfolio')
+        'all_items'           => __('All items', 'modal-portfolio'),
+        'view_item'           => __('View item', 'modal-portfolio'),
+        'add_new_item'        => __('Add an item', 'modal-portfolio'),
+        'add_new'             => __('Add', 'modal-portfolio'),
+        'edit_item'           => __('Edit an item', 'modal-portfolio'),
+        'update_item'         => __('Update', 'modal-portfolio'),
+        'search_items'        => __('Search for an item', 'modal-portfolio'),
+        'not_found'           => __('No result', 'modal-portfolio'),
+        'not_found_in_trash'  => __('No result in the trash', 'modal-portfolio')
     );
     $args = array(
         'labels'              => $labels,
@@ -41,7 +41,7 @@ function portfolio_category() {
         'project-cat',
         'portfolio',
         array(
-            'label' => __('Catégories', 'modal-portfolio'),
+            'label' => __('Categories', 'modal-portfolio'),
             'rewrite' => array('slug' => 'portfolio'),
             'hierarchical' => true,
 			'show_admin_column' => true
@@ -53,10 +53,12 @@ add_action('init', 'portfolio_category');
 // Ajout d'un sous-menu d'options et de documentation
 add_action('admin_menu', 'modal_portfolio_submenu_page');
 function modal_portfolio_submenu_page() {
-	add_submenu_page('edit.php?post_type=portfolio', __('Options', 'modal-portfolio'), __('Options', 'modal-portfolio'), 'manage_options', 'portfolio', 'modal_portfolio_options');
-	add_submenu_page('edit.php?post_type=portfolio', __('Documentation', 'modal-portfolio'), __('Documentation', 'modal-portfolio'), 'manage_options', 'portfolio-documentation', 'modal_portfolio_documentation');
+	add_submenu_page('edit.php?post_type=portfolio', __('Settings', 'modal-portfolio'), __('Settings', 'modal-portfolio'), 'manage_options', 'portfolio', 'modal_portfolio_options');
+	add_submenu_page('edit.php?post_type=portfolio', __('CSS Styles', 'modal-portfolio'), __('CSS Styles', 'modal-portfolio'), 'manage_options', 'portfolio-styles', 'modal_portfolio_styles');
+	add_submenu_page('edit.php?post_type=portfolio', __('Readme', 'modal-portfolio'), __('Readme', 'modal-portfolio'), 'manage_options', 'portfolio-documentation', 'modal_portfolio_documentation');
 }
 include('modal-portfolio-options.php');
+include('modal-portfolio-styles.php');
 include('modal-portfolio-documentation.php');
 
 // Ajout du filtre par catégorie (dans la section "toutes les références")
@@ -67,7 +69,7 @@ function modal_portfolio_filter() {
     if($typenow == 'portfolio') {
 		$taxonomy = 'project-cat'; 
 		wp_dropdown_categories(array(
-			'show_option_all' =>  __('Voir toutes les catégories', 'modal-portfolio'),
+			'show_option_all' =>  __('View all categories', 'modal-portfolio'),
 			'taxonomy'        =>  $taxonomy,
 			'name'            =>  $taxonomy,
 			'orderby'         =>  'name',

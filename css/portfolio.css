@@ -1,9 +1,5 @@
 .clear {clear:both; line-height:0}
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+#filters, .isotope {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box}
 
 /* Classes générales du portfolio */
 .modal-portfolio {overflow:hidden; position:relative; background:#FFF; cursor:pointer}
@@ -36,6 +32,11 @@
 #simplemodal-container .modal-bloc {padding-bottom:1em; border-bottom:1px solid #e5e5e5}
 #simplemodal-container .modal-bloc .modal-img {float:left; width:44%; margin:.2em 1% 0 0}
 #simplemodal-container .modal-bloc .modal-img img {width:100%}
+#simplemodal-container .modal-bloc .modal-img video {width:100%; max-width:100%; height:auto}
+#simplemodal-container .modal-bloc .modal-img .portfolio-video{width:100%;height:100%;padding:0}
+#simplemodal-container .modal-bloc .modal-img .portfolio-video-wrap{position:relative;}
+#simplemodal-container .modal-bloc .modal-img .portfolio-video-wrap .ratio {display:block;width:100%;height:auto;}
+#simplemodal-container .modal-bloc .modal-img .portfolio-video-wrap iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
 #simplemodal-container .modal-bloc .modal-content {float:left; width:54%}
 #simplemodal-container .modal-bloc .modal-content p {margin-bottom:.6em}
 #simplemodal-container .modal-close button {position:absolute; bottom:1em; left:1em; background-color:#fff; border:1px solid #ccc; color:#333; border-radius:5px; font-size:.9em; padding:.3em .6em; cursor:pointer}

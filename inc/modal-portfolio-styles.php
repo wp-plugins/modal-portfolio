@@ -2,28 +2,33 @@
 // Mise à jour des données par défaut
 function modal_portfolio_update_styles() {
 	// Réglages de base
-	$modal_portfolio_css_path			= sanitize_text_field($_POST['modal_portfolio_css_path']);
-	$modal_portfolio_styleType			= sanitize_text_field($_POST['modal_portfolio_styleType']);
-	$modal_portfolio_effectsSource		= sanitize_text_field($_POST['modal_portfolio_effectsSource']);
-	$modal_portfolio_effectsHeight		= sanitize_text_field($_POST['modal_portfolio_effectsHeight']);
-	$modal_portfolio_colorOverall		= sanitize_text_field($_POST['modal_portfolio_colorOverall']);
-	$modal_portfolio_bgcolorOverall		= sanitize_text_field($_POST['modal_portfolio_bgcolorOverall']);
-	$modal_portfolio_effectsPadding		= sanitize_text_field($_POST['modal_portfolio_effectsPadding']);
-	$modal_portfolio_effectsAlign		= sanitize_text_field($_POST['modal_portfolio_effectsAlign']);
-	$modal_portfolio_cornersTypeModal	= sanitize_text_field($_POST['modal_portfolio_cornersTypeModal']);
-	$modal_portfolio_cornersRadiusModal	= sanitize_text_field($_POST['modal_portfolio_cornersRadiusModal']);
-	$modal_portfolio_widthThumbnails	= sanitize_text_field($_POST['modal_portfolio_widthThumbnails']);
-	$modal_portfolio_marginThumbnails	= sanitize_text_field($_POST['modal_portfolio_marginThumbnails']);
-	$modal_portfolio_bgcolorLinkFilter	= sanitize_text_field($_POST['modal_portfolio_bgcolorLinkFilter']);
-	$modal_portfolio_bgcolorHoverFilter	= sanitize_text_field($_POST['modal_portfolio_bgcolorHoverFilter']);
-	$modal_portfolio_colorLinkFilter	= sanitize_text_field($_POST['modal_portfolio_colorLinkFilter']);
-	$modal_portfolio_colorHoverFilter	= sanitize_text_field($_POST['modal_portfolio_colorHoverFilter']);
-	$modal_portfolio_borderWidth		= sanitize_text_field($_POST['modal_portfolio_borderWidth']);
-	$modal_portfolio_borderStyle		= sanitize_text_field($_POST['modal_portfolio_borderStyle']);
-	$modal_portfolio_borderColor		= sanitize_text_field($_POST['modal_portfolio_borderColor']);
-	$modal_portfolio_cornersTypeFilter	= sanitize_text_field($_POST['modal_portfolio_cornersTypeFilter']);
-	$modal_portfolio_cornersRadiusFilter= sanitize_text_field($_POST['modal_portfolio_cornersRadiusFilter']);
-	$modal_portfolio_marginFilter		= sanitize_text_field($_POST['modal_portfolio_marginFilter']);
+	$modal_portfolio_css_path				= sanitize_text_field($_POST['modal_portfolio_css_path']);
+	$modal_portfolio_styleType				= sanitize_text_field($_POST['modal_portfolio_styleType']);
+	$modal_portfolio_effectsSource			= sanitize_text_field($_POST['modal_portfolio_effectsSource']);
+	$modal_portfolio_effectsHeight			= sanitize_text_field($_POST['modal_portfolio_effectsHeight']);
+	$modal_portfolio_colorOverall			= sanitize_text_field($_POST['modal_portfolio_colorOverall']);
+	$modal_portfolio_bgcolorOverall			= sanitize_text_field($_POST['modal_portfolio_bgcolorOverall']);
+	$modal_portfolio_effectsPadding			= sanitize_text_field($_POST['modal_portfolio_effectsPadding']);
+	$modal_portfolio_effectsAlign			= sanitize_text_field($_POST['modal_portfolio_effectsAlign']);
+	$modal_portfolio_cornersTypeModal		= sanitize_text_field($_POST['modal_portfolio_cornersTypeModal']);
+	$modal_portfolio_cornersRadiusModal		= sanitize_text_field($_POST['modal_portfolio_cornersRadiusModal']);
+	$modal_portfolio_widthThumbnails		= sanitize_text_field($_POST['modal_portfolio_widthThumbnails']);
+	$modal_portfolio_marginThumbnails		= sanitize_text_field($_POST['modal_portfolio_marginThumbnails']);
+	$modal_portfolio_widthModal				= sanitize_text_field($_POST['modal_portfolio_widthModal']);
+	$modal_portfolio_heightModal			= sanitize_text_field($_POST['modal_portfolio_heightModal']);
+	$modal_portfolio_widthModalCol1			= sanitize_text_field($_POST['modal_portfolio_widthModalCol1']);
+	$modal_portfolio_widthModalCol2			= sanitize_text_field($_POST['modal_portfolio_widthModalCol2']);
+	$modal_portfolio_marginRightModalCol1	= sanitize_text_field($_POST['modal_portfolio_marginRightModalCol1']);
+	$modal_portfolio_bgcolorLinkFilter		= sanitize_text_field($_POST['modal_portfolio_bgcolorLinkFilter']);
+	$modal_portfolio_bgcolorHoverFilter		= sanitize_text_field($_POST['modal_portfolio_bgcolorHoverFilter']);
+	$modal_portfolio_colorLinkFilter		= sanitize_text_field($_POST['modal_portfolio_colorLinkFilter']);
+	$modal_portfolio_colorHoverFilter		= sanitize_text_field($_POST['modal_portfolio_colorHoverFilter']);
+	$modal_portfolio_borderWidth			= sanitize_text_field($_POST['modal_portfolio_borderWidth']);
+	$modal_portfolio_borderStyle			= sanitize_text_field($_POST['modal_portfolio_borderStyle']);
+	$modal_portfolio_borderColor			= sanitize_text_field($_POST['modal_portfolio_borderColor']);
+	$modal_portfolio_cornersTypeFilter		= sanitize_text_field($_POST['modal_portfolio_cornersTypeFilter']);
+	$modal_portfolio_cornersRadiusFilter	= sanitize_text_field($_POST['modal_portfolio_cornersRadiusFilter']);
+	$modal_portfolio_marginFilter			= sanitize_text_field($_POST['modal_portfolio_marginFilter']);
 
 	// Mise à jour des données
 	update_option("modal_portfolio_css_path", $modal_portfolio_css_path);
@@ -38,6 +43,11 @@ function modal_portfolio_update_styles() {
 	update_option("modal_portfolio_cornersRadiusModal", $modal_portfolio_cornersRadiusModal);
 	update_option("modal_portfolio_widthThumbnails", $modal_portfolio_widthThumbnails);
 	update_option("modal_portfolio_marginThumbnails", $modal_portfolio_marginThumbnails);
+	update_option("modal_portfolio_widthModal", $modal_portfolio_widthModal);
+	update_option("modal_portfolio_heightModal", $modal_portfolio_heightModal);
+	update_option("modal_portfolio_widthModalCol1", $modal_portfolio_widthModalCol1);
+	update_option("modal_portfolio_widthModalCol2", $modal_portfolio_widthModalCol2);
+	update_option("modal_portfolio_marginRightModalCol1", $modal_portfolio_marginRightModalCol1);
 	update_option("modal_portfolio_bgcolorLinkFilter", $modal_portfolio_bgcolorLinkFilter);
 	update_option("modal_portfolio_bgcolorHoverFilter", $modal_portfolio_bgcolorHoverFilter);
 	update_option("modal_portfolio_colorLinkFilter", $modal_portfolio_colorLinkFilter);
@@ -66,15 +76,15 @@ function modal_portfolio_styles() {
 <script type="application/javascript">
 jQuery(document).ready(function($) {  
 	if(jQuery("#modal_portfolio_styleType").val() == true) {
-		jQuery(".disabled").find("input, select").attr("disabled", false);
+		jQuery(".disabled").css("display", "block");
 	} else {
-		jQuery(".disabled").find("input, select").attr("disabled", true);
+		jQuery(".disabled").css("display", "none");
 	}
 	jQuery("#modal_portfolio_styleType").on("change", function() {
 		if(jQuery(this).val() == true) {
-			jQuery(".disabled").find("input, select").attr("disabled", false);
+			jQuery(".disabled").css("display", "block");
 		} else {
-			jQuery(".disabled").find("input, select").attr("disabled", true);
+			jQuery(".disabled").css("display", "none");
 		}
 	});
 });
@@ -98,6 +108,10 @@ jQuery(document).ready(function($) {
             <br/><em><?php _e('If "yes" is selected, the plugin uses a file style.php instead of style.css (and makes the right options used).', 'modal-portfolio'); ?></em>
         </p>
 
+    	<p class="submit">
+        	<input type="submit" name="modal_portfolio_action" class="button-primary" value="<?php _e('Save', 'modal-portfolio'); ?>" />
+        </p>
+		
 		<div class="disabled">
 			<h4><?php _e('Style of the effects', 'modal-portfolio'); ?></h4>
 			<p class="tr">
@@ -132,15 +146,25 @@ jQuery(document).ready(function($) {
 				</select>
 				<label for="modal_portfolio_effectsAlign"><strong><?php _e('Text alignment in the rollover effect', 'modal-portfolio'); ?></strong></label>
 			</p>
-		</div>
+			
+			<h4><?php _e('Style of the thumbnails', 'modal-portfolio'); ?></h4>
+			<p class="tr">
+				<input type="text" id="modal_portfolio_widthThumbnails" name="modal_portfolio_widthThumbnails" value="<?php echo get_option('modal_portfolio_widthThumbnails'); ?>"/>
+				<label for="modal_portfolio_widthThumbnails"><strong><?php _e('Width of the thumbnails', 'modal-portfolio'); ?></strong></label>
+			</p>
+			<p class="tr">
+				<input type="text" id="modal_portfolio_marginThumbnails" name="modal_portfolio_marginThumbnails" value="<?php echo get_option('modal_portfolio_marginThumbnails'); ?>"/>
+				<label for="modal_portfolio_marginThumbnails"><strong><?php _e('Margin of the thumbnails', 'modal-portfolio'); ?></strong></label>
+			</p>
 
-    	<p class="submit">
-        	<input type="submit" name="modal_portfolio_action" class="button-primary" value="<?php _e('Save', 'modal-portfolio'); ?>" />
-        </p>
+			<p class="submit">
+				<input type="submit" name="modal_portfolio_action" class="button-primary" value="<?php _e('Save', 'modal-portfolio'); ?>" />
+			</p>
+		</div>
 	</div>
 	
 	<div class="col disabled">
-        <h4><?php _e('Style of the thumbnails and of the modal window', 'modal-portfolio'); ?></h4>
+        <h4><?php _e('Style of the modal window', 'modal-portfolio'); ?></h4>
         <p class="tr">
             <select name="modal_portfolio_cornersTypeModal" id="modal_portfolio_cornersTypeModal">
                 <option value="1" <?php if(get_option("modal_portfolio_cornersTypeModal") == true) { echo 'selected="selected"'; } ?>><?php _e('Rounded corners', 'modal-portfolio'); ?></option>
@@ -153,13 +177,27 @@ jQuery(document).ready(function($) {
             <label for="modal_portfolio_cornersRadiusModal"><strong><?php _e('Border radius (if "rounded corners")', 'modal-portfolio'); ?></strong></label>
         </p>
 		<p class="tr">
-            <input type="text" id="modal_portfolio_widthThumbnails" name="modal_portfolio_widthThumbnails" value="<?php echo get_option('modal_portfolio_widthThumbnails'); ?>"/>
-            <label for="modal_portfolio_widthThumbnails"><strong><?php _e('Width of the thumbnails', 'modal-portfolio'); ?></strong></label>
+            <input type="text" id="modal_portfolio_widthModal" name="modal_portfolio_widthModal" value="<?php echo get_option('modal_portfolio_widthModal'); ?>"/>
+            <label for="modal_portfolio_widthModal"><strong><?php _e('Width of the modal window', 'modal-portfolio'); ?></strong></label>
         </p>
 		<p class="tr">
-            <input type="text" id="modal_portfolio_marginThumbnails" name="modal_portfolio_marginThumbnails" value="<?php echo get_option('modal_portfolio_marginThumbnails'); ?>"/>
-            <label for="modal_portfolio_marginThumbnails"><strong><?php _e('Margin of the thumbnails', 'modal-portfolio'); ?></strong></label>
+            <input type="text" id="modal_portfolio_heightModal" name="modal_portfolio_heightModal" value="<?php echo get_option('modal_portfolio_heightModal'); ?>"/>
+            <label for="modal_portfolio_heightModal"><strong><?php _e('Height of the modal window', 'modal-portfolio'); ?></strong></label>
         </p>
+		<p class="tr">
+            <input type="text" id="modal_portfolio_widthModalCol1" name="modal_portfolio_widthModalCol1" value="<?php echo get_option('modal_portfolio_widthModalCol1'); ?>"/>
+            <label for="modal_portfolio_widthModalCol1"><strong><?php _e('Width of the left column in the modal window', 'modal-portfolio'); ?></strong></label>
+			<br/><em><?php _e('The width of the left column corresponds to the width of the image or video.', 'modal-portfolio'); ?></em>
+        </p>
+		<p class="tr">
+            <input type="text" id="modal_portfolio_widthModalCol2" name="modal_portfolio_widthModalCol2" value="<?php echo get_option('modal_portfolio_widthModalCol2'); ?>"/>
+            <label for="modal_portfolio_widthModalCol2"><strong><?php _e('Width of the right column in the modal window', 'modal-portfolio'); ?></strong></label>
+        </p>
+		<p class="tr">
+            <input type="text" id="modal_portfolio_marginRightModalCol1" name="modal_portfolio_marginRightModalCol1" value="<?php echo get_option('modal_portfolio_marginRightModalCol1'); ?>"/>
+            <label for="modal_portfolio_marginRightModalCol1"><strong><?php _e('Margin-right of the left column (space between the columns)', 'modal-portfolio'); ?></strong></label>
+        </p>
+
 		<h4><?php _e('Style of the filters', 'modal-portfolio'); ?></h4>
 		<p class="tr">
             <input type="text" id="modal_portfolio_bgcolorLinkFilter" name="modal_portfolio_bgcolorLinkFilter" value="<?php echo get_option('modal_portfolio_bgcolorLinkFilter'); ?>"/>

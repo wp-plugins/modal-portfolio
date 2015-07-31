@@ -3,13 +3,13 @@
  * Plugin Name: Modal Portfolio
  * Plugin URI: http://www.internet-formation.fr
  * Description: Portfolio avec photos, description, titre et filtres en responsive avec de multiples options (responsive portfolio with images, description, title and filters (with multiple settings)
- * Version: 1.3
+ * Version: 1.4
  * Author: Mathieu Chartier
  * Author URI: http://www.mathieu-chartier.com
 */
 // Version du plugin
 global $modal_portfolio_version;
-$modal_portfolio_version = "1.3";
+$modal_portfolio_version = "1.4";
 
 // Gestion des langues
 function modal_portfolio_lang() {
@@ -56,6 +56,11 @@ function modal_portfolio_installation() {
 	add_option("modal_portfolio_cornersRadiusModal", "5px 5px 5px 5px");
 	add_option("modal_portfolio_widthThumbnails", "31%");
 	add_option("modal_portfolio_marginThumbnails", "1%");
+	add_option("modal_portfolio_widthModal", "60%");
+	add_option("modal_portfolio_heightModal", "60%");
+	add_option("modal_portfolio_widthModalCol1", "44%");
+	add_option("modal_portfolio_widthModalCol2", "54%");
+	add_option("modal_portfolio_marginRightModalCol1", "2%");
 	add_option("modal_portfolio_bgcolorLinkFilter", "#242424");
 	add_option("modal_portfolio_bgcolorHoverFilter", "#FFFFFF");
 	add_option("modal_portfolio_colorLinkFilter", "#FFFFFF");
@@ -103,6 +108,11 @@ function modal_portfolio_desinstallation() {
 	delete_option("modal_portfolio_cornersRadiusModal");
 	delete_option("modal_portfolio_widthThumbnails");
 	delete_option("modal_portfolio_marginThumbnails");
+	delete_option("modal_portfolio_widthModal");
+	delete_option("modal_portfolio_heightModal");
+	delete_option("modal_portfolio_widthModalCol1");
+	delete_option("modal_portfolio_widthModalCol2");
+	delete_option("modal_portfolio_marginRightModalCol1");
 	delete_option("modal_portfolio_bgcolorLinkFilter");
 	delete_option("modal_portfolio_bgcolorHoverFilter");
 	delete_option("modal_portfolio_colorLinkFilter");
@@ -122,8 +132,8 @@ function modal_portfolio_desinstallation() {
 function modal_portfolio_upgrade() {
     global $modal_portfolio_version;
     if(get_site_option('modal_portfolio_version') != $modal_portfolio_version) {
-		if($modal_portfolio_version == "1.3") {
-			// On ajoute les nouvelles données
+		// Nouvelles données v1.3
+		if(!get_option('modal_portfolio_styleType')) {
 			update_option("modal_portfolio_styleType", 0);
 			update_option("modal_portfolio_effectsSource", "bottom");
 			update_option("modal_portfolio_effectsHeight", "45");
@@ -145,6 +155,14 @@ function modal_portfolio_upgrade() {
 			update_option("modal_portfolio_cornersTypeFilter", true);
 			update_option("modal_portfolio_cornersRadiusFilter", "5px 5px 5px 5px");
 			update_option("modal_portfolio_marginFilter", ".3em .3em");
+		}
+		// Nouvelles données v1.4
+		if(!get_option('modal_portfolio_widthModal')) {
+			update_option("modal_portfolio_widthModal", "60%");
+			update_option("modal_portfolio_heightModal", "60%");
+			update_option("modal_portfolio_widthModalCol1", "44%");
+			update_option("modal_portfolio_widthModalCol2", "54%");
+			update_option("modal_portfolio_marginRightModalCol1", "2%");
 		}
 		
 		// Mise à jour de la version du plugin en cours
@@ -185,6 +203,7 @@ function modal_portfolio_scripts() {
 		'openDownEffect'	=> get_option("modal_portfolio_openDownEffect"),
 		'openUpDuration'	=> get_option("modal_portfolio_openUpDuration"),
 		'openDownDuration'	=> get_option("modal_portfolio_openDownDuration"),
+		'activeDynamicCSS'	=> get_option("modal_portfolio_styleType"),
 		'positionEffect'	=> get_option("modal_portfolio_effectsSource"),
 		'heightEffect'		=> get_option("modal_portfolio_effectsHeight"),
 	);

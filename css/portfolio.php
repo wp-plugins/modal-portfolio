@@ -17,6 +17,11 @@ $margeVignettes = get_option("modal_portfolio_marginThumbnails");
 $bgcouleurFiltre = get_option("modal_portfolio_bgcolorLinkFilter");
 $bgcouleurFiltreHover = get_option("modal_portfolio_bgcolorHoverFilter");
 $couleurFiltre = get_option("modal_portfolio_colorLinkFilter");
+$largeurModale = get_option("modal_portfolio_widthModal");
+$hauteurModale = get_option("modal_portfolio_heightModal");
+$largeurCol1 = get_option("modal_portfolio_widthModalCol1");
+$largeurCol2 = get_option("modal_portfolio_widthModalCol2");
+$margeDroiteCol1 = get_option("modal_portfolio_marginRightModalCol1");
 $couleurFiltreHover = get_option("modal_portfolio_colorHoverFilter");
 $widthFiltreBorder = get_option("modal_portfolio_borderWidth");
 $styleFiltreBorder = get_option("modal_portfolio_borderStyle");
@@ -58,23 +63,23 @@ if(get_option("modal_portfolio_cornersTypeFilter") == true) {
 .hidden-modal {display:none;}
 
 /* Rendu de la modale (général) */
-#simplemodal-container {min-height:50%; height:60%; max-height:90%; width:60%; color:#333; background-color:#FFF; border:2px solid #666; <?php echo $typeCoinsModale; ?> position:relative}
+#simplemodal-container {height:<?php echo $hauteurModale; ?>; width:<?php echo $largeurModale; ?>; color:#333; background-color:#FFF; border:2px solid #666; <?php echo $typeCoinsModale; ?> position:relative}
 #simplemodal-container .simplemodal-data {padding:8px}
 #simplemodal-container a.modalCloseImg {background:url(../img/2x.png) no-repeat; width:25px; height:24px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer}
 
 /* Rendu du contenu de la modale */
 #simplemodal-container h2 {padding:.5em 1em 1em; color:#332c2c; border-bottom:1px solid #e5e5e5; margin-bottom:1em}
-#simplemodal-container .modal-bloc {padding-bottom:1em; border-bottom:1px solid #e5e5e5}
-#simplemodal-container .modal-bloc .modal-img {float:left; width:44%; margin:.2em 1% 0 0}
-#simplemodal-container .modal-bloc .modal-img img {width:100%}
-#simplemodal-container .modal-bloc .modal-img video {width:100%; max-width:100%; height:auto}
-#simplemodal-container .modal-bloc .modal-img .portfolio-video{width:100%;height:100%;padding:0}
-#simplemodal-container .modal-bloc .modal-img .portfolio-video-wrap{position:relative;}
-#simplemodal-container .modal-bloc .modal-img .portfolio-video-wrap .ratio {display:block;width:100%;height:auto;}
-#simplemodal-container .modal-bloc .modal-img .portfolio-video-wrap iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
-#simplemodal-container .modal-bloc .modal-content {float:left; width:54%}
-#simplemodal-container .modal-bloc .modal-content p {margin-bottom:.6em}
-#simplemodal-container .modal-close button {position:absolute; bottom:1em; left:1em; background-color:#fff; border:1px solid #ccc; color:#333; border-radius:5px; font-size:.9em; padding:.3em .6em; cursor:pointer}
+#simplemodal-container .modal-pf-bloc {padding-bottom:1em; border-bottom:1px solid #e5e5e5}
+#simplemodal-container .modal-pf-bloc .modal-pf-img {float:left; width:<?php echo $largeurCol1; ?>; margin:.2em <?php echo $margeDroiteCol1; ?> 0 0}
+#simplemodal-container .modal-pf-bloc .modal-pf-img img {width:100%}
+#simplemodal-container .modal-pf-bloc .modal-pf-img video {width:100%; max-width:100%; height:auto}
+#simplemodal-container .modal-pf-bloc .modal-pf-img .portfolio-video{width:100%;height:100%;padding:0}
+#simplemodal-container .modal-pf-bloc .modal-pf-img .portfolio-video-wrap{position:relative;}
+#simplemodal-container .modal-pf-bloc .modal-pf-img .portfolio-video-wrap .ratio {display:block;width:100%;height:auto;}
+#simplemodal-container .modal-pf-bloc .modal-pf-img .portfolio-video-wrap iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
+#simplemodal-container .modal-pf-bloc .modal-pf-content {float:right; width:<?php echo $largeurCol2; ?>}
+#simplemodal-container .modal-pf-bloc .modal-pf-content p {margin-bottom:.6em}
+#simplemodal-container .modal-pf-close button {position:absolute; bottom:1em; left:1em; background-color:#fff; border:1px solid #ccc; color:#333; border-radius:5px; font-size:.9em; padding:.3em .6em; cursor:pointer}
 #simplemodal-container .modal-close button:hover {background-color:#e6e6e6}
 
 /* Responsive */
@@ -83,11 +88,11 @@ if(get_option("modal_portfolio_cornersTypeFilter") == true) {
 }
 @media (max-width:768px) {
 #simplemodal-container {font-size:.9em; height:75%; width:75%;}
-#simplemodal-container .modal-bloc {padding-bottom:2.3em; border-bottom:0}
-#simplemodal-container .modal-bloc .modal-img {float:none; width:98%; margin:.2em auto 1em}
-#simplemodal-container .modal-bloc .modal-img img {display:block; margin:0 auto}
-#simplemodal-container .modal-bloc .modal-content {float:none; width:100%; padding:.2em; margin-top:1em}
-#simplemodal-container .modal-close button {left:auto; bottom:.5em; right:1em}
+#simplemodal-container .modal-pf-bloc {padding-bottom:2.3em; border-bottom:0}
+#simplemodal-container .modal-pf-bloc .modal-pf-img {float:none; width:98%; margin:.2em auto 1em}
+#simplemodal-container .modal-pf-bloc .modal-pf-img img {display:block; margin:0 auto}
+#simplemodal-container .modal-pf-bloc .modal-pf-content {float:none; width:100%; padding:.2em; margin-top:1em}
+#simplemodal-container .modal-pf-close button {left:auto; bottom:.5em; right:1em}
 }
 @media (max-width:480px) {
 #simplemodal-container {font-size:.8em; height:85%; width:85%;}

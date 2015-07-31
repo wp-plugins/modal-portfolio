@@ -44,7 +44,7 @@ function modal_portfolio_shortcode($args) {
 	if(empty($verif) && $parents == false) {
 		$parents = true;
 	}
-	
+
 	// Récupérer l'ID de la catégorie parente
 	foreach($allfilters as $filter) {
 		// Si on ne garde que les catégories enfants
@@ -111,7 +111,7 @@ function modal_portfolio_shortcode($args) {
 		'post_type' => 'portfolio'
 	);
 	$portfolioPosts = get_posts($atts);
-	
+
 	// Catégorie parente (si désirée)
 	if($parents == true || $parents == 1) {
 		$parentTerm = get_terms('project-cat', array("include" => $IDcat));
@@ -196,7 +196,6 @@ function modal_portfolio_shortcode($args) {
 			$slugs = substr($slugs, 0, -1);
 			$names = substr($names, 0, -2);
 		}
-		
 		$content.= display_shortcode_html($posts, $slugs, $names, $title_portfolio, $video_portfolio, $nb);
 		$nb++;
 	}
@@ -209,7 +208,7 @@ function modal_portfolio_shortcode($args) {
 // Fonction d'affichage (afin d'éviter les redondances d'utilisation)
 function display_shortcode_html($posts, $slugs, $names, $title_portfolio = '', $video_portfolio = '', $nb = 0) {
 	$content = '<div class="element-item transition '.$slugs.'" data-category="transition">'."\n";
-	$content.= '<div class="modal-portfolio modal '.$slugs.'" id="'.$posts['ID']."-".$nb.'">'."\n";
+	$content.= '<div class="modal-portfolio modal-pf '.$slugs.'" id="'.$posts['ID']."-".$nb.'">'."\n";
 	$content.= get_the_post_thumbnail($posts['ID'], 'medium')."\n";
 	
 	// Affichage conditionnel des effets de texte au survol
@@ -232,19 +231,19 @@ function display_shortcode_html($posts, $slugs, $names, $title_portfolio = '', $
 	$content.= '</div>'."\n";
 	$content.= '</div>'."\n";
 	
-	$content.= '<div class="hidden-modal modal-'.$posts['ID']."-".$nb.'">'."\n";
+	$content.= '<div class="hidden-modal modal-pf-'.$posts['ID']."-".$nb.'">'."\n";
 	
 	// Affichage conditionnel du titre de la modale
 	if(get_option("modal_portfolio_title_modal") == true) {
 		$content.= '<h2>'.apply_filters('the_title', get_post_field('post_title', $posts['ID'])).'</h2>'."\n";
 	}
 	
-	$content.= '<div class="modal-bloc">'."\n";
+	$content.= '<div class="modal-pf-bloc">'."\n";
 	if(!empty($video_portfolio)) {
 		if(preg_match('#youtu[.]?be#i', $video_portfolio)) {
 			preg_match('#[\\?\\&]v[i\/]?=([^\\?\\&]+)#i', $video_portfolio, $matches);
 			$videoID = $matches[1];
-			$videoLink = '<div class="modal-img portfolio-video">';
+			$videoLink = '<div class="modal-pf-img portfolio-video">';
 			$videoLink.= '<div class="portfolio-video-wrap">';
 			$videoLink.= '<img src="'.plugins_url('img/16x9.png', dirname(__FILE__)).'" class="ratio"/>';
 			$videoLink.= '<iframe src="//www.youtube.com/embed/'.$videoID.'" frameborder="0" allowfullscreen></iframe>';
@@ -253,7 +252,7 @@ function display_shortcode_html($posts, $slugs, $names, $title_portfolio = '', $
 		} elseif(preg_match('#(dailymotion|dai.ly)#i', $video_portfolio)) {
 			preg_match('#(dailymotion.com/video|dai.ly)/([^_]+)#i', $video_portfolio, $matches);
 			$videoID = $matches[2];
-			$videoLink = '<div class="modal-img portfolio-video">';
+			$videoLink = '<div class="modal-pf-img portfolio-video">';
 			$videoLink.= '<div class="portfolio-video-wrap">';
 			$videoLink.= '<img src="'.plugins_url('img/16x9.png', dirname(__FILE__)).'" class="ratio"/>';
 			$videoLink.= '<iframe src="//www.dailymotion.com/embed/video/'.$videoID.'" frameborder="0" allowfullscreen></iframe>';
@@ -262,7 +261,7 @@ function display_shortcode_html($posts, $slugs, $names, $title_portfolio = '', $
 		} elseif(preg_match('#(vimeo)#i', $video_portfolio)) {
 			preg_match('#(vimeo.com)/([^_]+)#i', $video_portfolio, $matches);
 			$videoID = $matches[2];
-			$videoLink = '<div class="modal-img portfolio-video">';
+			$videoLink = '<div class="modal-pf-img portfolio-video">';
 			$videoLink.= '<div class="portfolio-video-wrap">';
 			$videoLink.= '<img src="'.plugins_url('img/16x9.png', dirname(__FILE__)).'" class="ratio"/>';
 			$videoLink.= '<iframe src="//player.vimeo.com/video/'.$videoID.'" allowfullscreen></iframe>';
@@ -275,16 +274,18 @@ function display_shortcode_html($posts, $slugs, $names, $title_portfolio = '', $
 			$videoLink.= '</video>';
 		}
 		// $media = get_attached_media('video', $posts['ID']); // Tableau des vidéos liées à l'item
-		$content.= '<div class="modal-img portfolio-video">';
+		$content.= '<div class="modal-pf-img portfolio-video">';
 		$content.= $videoLink;		
 		$content.= "</div>\n";
 	} else {
-		$content.= '<div class="modal-img">'.get_the_post_thumbnail($posts['ID'], 'large').'</div>'."\n";
+		$content.= '<div class="modal-pf-img">'.get_the_post_thumbnail($posts['ID'], 'large').'</div>'."\n";
 	}
 	
 	// Affichage conditionnel de la description dans la modale
 	if(get_option("modal_portfolio_text_modal") == true) {
-		$content.= '<div class="modal-content">'.apply_filters('the_content', get_post_field('post_content', $posts['ID'])).'</div>'."\n";
+		// $content.= '<div class="modal-pf-content">'.apply_filters('the_content', get_post_field('post_content', $posts['ID'])).'</div>'."\n";
+		$texteComplet = wpautop(get_post_field('post_content', $posts['ID'])); // Pour contrer les problèmes avec PageBuilder
+		$content.= '<div class="modal-pf-content">'.$texteComplet.'</div>'."\n";
 	}
 	
 	$content.= '<div class="clear"></div>'."\n";
@@ -292,7 +293,7 @@ function display_shortcode_html($posts, $slugs, $names, $title_portfolio = '', $
 	
 	// Affichage conditionnel du bouton de fermeture
 	if(get_option("modal_portfolio_close_button") == true) {
-		$content.= '<div class="modal-close"><button class="simplemodal-close">'.__('Close', 'modal-portfolio').'</button></div>'."\n";
+		$content.= '<div class="modal-pf-close"><button class="simplemodal-close">'.__('Close', 'modal-portfolio').'</button></div>'."\n";
 	}
 	
 	$content.= '<div class="clear"></div>'."\n";

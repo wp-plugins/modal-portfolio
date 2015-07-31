@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modal-portfolio\n"
-"POT-Creation-Date: 2015-07-27 13:09+0200\n"
-"PO-Revision-Date: 2015-07-27 13:11+0200\n"
+"POT-Creation-Date: 2015-08-01 00:13+0200\n"
+"PO-Revision-Date: 2015-08-01 00:16+0200\n"
 "Last-Translator: Mathieu Chartier <mathieu.chartier@internet-formation.fr>\n"
 "Language-Team: Mathieu Chartier <mathieu.chartier@internet-formation.fr>\n"
-"Language: fr\n"
+"Language: fr_BE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -403,7 +403,8 @@ msgid "Use this video"
 msgstr "Utilisez cette vidéo"
 
 #: ../inc/modal-portfolio-options.php:48 ../inc/modal-portfolio-options.php:187
-#: ../inc/modal-portfolio-styles.php:56 ../inc/modal-portfolio-styles.php:138
+#: ../inc/modal-portfolio-styles.php:66 ../inc/modal-portfolio-styles.php:112
+#: ../inc/modal-portfolio-styles.php:161
 msgid "Save"
 msgstr "Enregistrer"
 
@@ -480,7 +481,7 @@ msgstr "Paramétrage général"
 #: ../inc/modal-portfolio-options.php:171
 #: ../inc/modal-portfolio-options.php:179
 #: ../inc/modal-portfolio-options.php:201
-#: ../inc/modal-portfolio-options.php:237 ../inc/modal-portfolio-styles.php:94
+#: ../inc/modal-portfolio-options.php:237 ../inc/modal-portfolio-styles.php:104
 msgid "Yes"
 msgstr "Oui"
 
@@ -491,7 +492,7 @@ msgstr "Oui"
 #: ../inc/modal-portfolio-options.php:172
 #: ../inc/modal-portfolio-options.php:180
 #: ../inc/modal-portfolio-options.php:202
-#: ../inc/modal-portfolio-options.php:238 ../inc/modal-portfolio-styles.php:95
+#: ../inc/modal-portfolio-options.php:238 ../inc/modal-portfolio-styles.php:105
 msgid "No"
 msgstr "Non"
 
@@ -677,31 +678,31 @@ msgstr "Sélectionnez le nombre de millisecondes utiles pour le second effet."
 msgid "All"
 msgstr "Tous"
 
-#: ../inc/modal-portfolio-shortcode.php:274
+#: ../inc/modal-portfolio-shortcode.php:273
 msgid "Video format not supported by your browser, you can "
 msgstr "Format vidéo non supporté par votre navigateur, vous pouvez "
 
-#: ../inc/modal-portfolio-shortcode.php:274
+#: ../inc/modal-portfolio-shortcode.php:273
 msgid "download the video"
 msgstr "télécharger la vidéo"
 
-#: ../inc/modal-portfolio-shortcode.php:295
+#: ../inc/modal-portfolio-shortcode.php:294
 msgid "Close"
 msgstr "Fermer"
 
-#: ../inc/modal-portfolio-styles.php:64
+#: ../inc/modal-portfolio-styles.php:74
 msgid "Modal Portfolio Styles"
 msgstr "Styles CSS"
 
-#: ../inc/modal-portfolio-styles.php:86
+#: ../inc/modal-portfolio-styles.php:96
 msgid "CSS Settings"
 msgstr "Options générales des CSS"
 
-#: ../inc/modal-portfolio-styles.php:89
+#: ../inc/modal-portfolio-styles.php:99
 msgid "URL of the CSS file of the theme"
 msgstr "URL du fichier CSS du thème"
 
-#: ../inc/modal-portfolio-styles.php:90
+#: ../inc/modal-portfolio-styles.php:100
 msgid ""
 "The option allows to choose another if desired style sheet (leave empty to "
 "not use CSS)"
@@ -709,15 +710,15 @@ msgstr ""
 "L'option permet de choisir une autre feuille de style si désirée (laisser "
 "vide pour ne pas utiliser de CSS)"
 
-#: ../inc/modal-portfolio-styles.php:90
+#: ../inc/modal-portfolio-styles.php:100
 msgid "by default."
 msgstr "par défaut."
 
-#: ../inc/modal-portfolio-styles.php:97
+#: ../inc/modal-portfolio-styles.php:107
 msgid "Use dynamic CSS?"
 msgstr "Utiliser des CSS dynamiques ?"
 
-#: ../inc/modal-portfolio-styles.php:98
+#: ../inc/modal-portfolio-styles.php:108
 msgid ""
 "If \"yes\" is selected, the plugin uses a file style.php instead of style."
 "css (and makes the right options used)."
@@ -725,153 +726,187 @@ msgstr ""
 "Si \"oui\" est sélectionné, le plugin utilise un fichier style.php plutôt "
 "que style.css (et rend les options de droite utilisables)."
 
-#: ../inc/modal-portfolio-styles.php:102
+#: ../inc/modal-portfolio-styles.php:116
 msgid "Style of the effects"
 msgstr "Style des effets"
 
-#: ../inc/modal-portfolio-styles.php:105
+#: ../inc/modal-portfolio-styles.php:119
 msgid "Color of the rollover effect"
 msgstr "Couleur des textes dans l'effet de survol"
 
-#: ../inc/modal-portfolio-styles.php:109
+#: ../inc/modal-portfolio-styles.php:123
 msgid "Background-color of the rollover effect"
 msgstr "Couleur de fond dans l'effet de survol"
 
-#: ../inc/modal-portfolio-styles.php:113
+#: ../inc/modal-portfolio-styles.php:127
 msgid "top"
 msgstr "Haut"
 
-#: ../inc/modal-portfolio-styles.php:114
+#: ../inc/modal-portfolio-styles.php:128
 msgid "bottom"
 msgstr "Bas"
 
-#: ../inc/modal-portfolio-styles.php:116
+#: ../inc/modal-portfolio-styles.php:130
 msgid "Positioning the rollover effect over thumbnails"
 msgstr "Positionnement de l'effet de survol au-dessus des vignettes"
 
-#: ../inc/modal-portfolio-styles.php:120
+#: ../inc/modal-portfolio-styles.php:134
 msgid "Height of the effect (in px)"
 msgstr "Hauteur du bloc de l'effet de survol (en px)"
 
-#: ../inc/modal-portfolio-styles.php:124
+#: ../inc/modal-portfolio-styles.php:138
 msgid "Global padding of the effect (in px)"
 msgstr "Padding général de l'effet de survol (en px)"
 
-#: ../inc/modal-portfolio-styles.php:128
+#: ../inc/modal-portfolio-styles.php:142
 msgid "left"
 msgstr "gauche"
 
-#: ../inc/modal-portfolio-styles.php:129
+#: ../inc/modal-portfolio-styles.php:143
 msgid "center"
 msgstr "centré"
 
-#: ../inc/modal-portfolio-styles.php:130
+#: ../inc/modal-portfolio-styles.php:144
 msgid "right"
 msgstr "droite"
 
-#: ../inc/modal-portfolio-styles.php:131
+#: ../inc/modal-portfolio-styles.php:145
 msgid "justify"
 msgstr "justifié"
 
-#: ../inc/modal-portfolio-styles.php:133
+#: ../inc/modal-portfolio-styles.php:147
 msgid "Text alignment in the rollover effect"
 msgstr "Alignement du texte dans l'effet de survol"
 
-#: ../inc/modal-portfolio-styles.php:143
-msgid "Style of the thumbnails and of the modal window"
-msgstr "Style des vignettes et de la fenêtre modale"
+#: ../inc/modal-portfolio-styles.php:150
+msgid "Style of the thumbnails"
+msgstr "Style des vignettes"
 
-#: ../inc/modal-portfolio-styles.php:146 ../inc/modal-portfolio-styles.php:198
-msgid "Rounded corners"
-msgstr "Coins arrondis"
-
-#: ../inc/modal-portfolio-styles.php:147 ../inc/modal-portfolio-styles.php:199
-msgid "Square corners"
-msgstr "Coins carrés"
-
-#: ../inc/modal-portfolio-styles.php:149
-msgid "Type of corners for the modal window"
-msgstr "Type de coins utilisés pour la fenêtre modale"
-
-#: ../inc/modal-portfolio-styles.php:153 ../inc/modal-portfolio-styles.php:205
-msgid "Border radius (if \"rounded corners\")"
-msgstr "Rayon des coins arrondis (si l'option est sélectionnée)"
-
-#: ../inc/modal-portfolio-styles.php:157
+#: ../inc/modal-portfolio-styles.php:153
 msgid "Width of the thumbnails"
 msgstr "Largeur des vignettes"
 
-#: ../inc/modal-portfolio-styles.php:161
+#: ../inc/modal-portfolio-styles.php:157
 msgid "Margin of the thumbnails"
 msgstr "Marges appliquées aux vignettes"
 
-#: ../inc/modal-portfolio-styles.php:163
+#: ../inc/modal-portfolio-styles.php:167
+msgid "Style of the modal window"
+msgstr "Style de la fenêtre modale"
+
+#: ../inc/modal-portfolio-styles.php:170 ../inc/modal-portfolio-styles.php:236
+msgid "Rounded corners"
+msgstr "Coins arrondis"
+
+#: ../inc/modal-portfolio-styles.php:171 ../inc/modal-portfolio-styles.php:237
+msgid "Square corners"
+msgstr "Coins carrés"
+
+#: ../inc/modal-portfolio-styles.php:173
+msgid "Type of corners for the modal window"
+msgstr "Type de coins utilisés pour la fenêtre modale"
+
+#: ../inc/modal-portfolio-styles.php:177 ../inc/modal-portfolio-styles.php:243
+msgid "Border radius (if \"rounded corners\")"
+msgstr "Rayon des coins arrondis (si l'option est sélectionnée)"
+
+#: ../inc/modal-portfolio-styles.php:181
+msgid "Width of the modal window"
+msgstr "Largeur de la fenêtre modale"
+
+#: ../inc/modal-portfolio-styles.php:185
+msgid "Height of the modal window"
+msgstr "Hauteur de la fenêtre modale"
+
+#: ../inc/modal-portfolio-styles.php:189
+msgid "Width of the left column in the modal window"
+msgstr "Largeur de la colonne de gauche dans la fenêtre modale"
+
+#: ../inc/modal-portfolio-styles.php:190
+msgid ""
+"The width of the left column corresponds to the width of the image or video."
+msgstr ""
+"La largeur de la colonne de gauche correspond à la largeur de l'image ou de "
+"la vidéo."
+
+#: ../inc/modal-portfolio-styles.php:194
+msgid "Width of the right column in the modal window"
+msgstr "Largeur de la colonne de droite dans la fenêtre modale"
+
+#: ../inc/modal-portfolio-styles.php:198
+msgid "Margin-right of the left column (space between the columns)"
+msgstr "Marge à droite de la colonne de gauche (espace entre les colonnes)"
+
+#: ../inc/modal-portfolio-styles.php:201
 msgid "Style of the filters"
 msgstr "Style des filtres"
 
-#: ../inc/modal-portfolio-styles.php:166
+#: ../inc/modal-portfolio-styles.php:204
 msgid "Link button background-color"
 msgstr "Couleur du fond du bouton"
 
-#: ../inc/modal-portfolio-styles.php:170
+#: ../inc/modal-portfolio-styles.php:208
 msgid "Hover button background-color"
 msgstr "Couleur de fond du bouton (au survol)"
 
-#: ../inc/modal-portfolio-styles.php:174
+#: ../inc/modal-portfolio-styles.php:212
 msgid "Link button color"
 msgstr "Couleur du texte du bouton"
 
-#: ../inc/modal-portfolio-styles.php:178
+#: ../inc/modal-portfolio-styles.php:216
 msgid "Hover button color"
 msgstr "Couleur du texte du bouton (au survol)"
 
-#: ../inc/modal-portfolio-styles.php:183
+#: ../inc/modal-portfolio-styles.php:221
 msgid "none"
 msgstr "aucun"
 
-#: ../inc/modal-portfolio-styles.php:184
+#: ../inc/modal-portfolio-styles.php:222
 msgid "solid"
 msgstr ""
 
-#: ../inc/modal-portfolio-styles.php:185
+#: ../inc/modal-portfolio-styles.php:223
 msgid "dotted"
 msgstr ""
 
-#: ../inc/modal-portfolio-styles.php:186
+#: ../inc/modal-portfolio-styles.php:224
 msgid "dashed"
 msgstr ""
 
-#: ../inc/modal-portfolio-styles.php:187
+#: ../inc/modal-portfolio-styles.php:225
 msgid "double"
 msgstr ""
 
-#: ../inc/modal-portfolio-styles.php:188
+#: ../inc/modal-portfolio-styles.php:226
 msgid "groove"
 msgstr ""
 
-#: ../inc/modal-portfolio-styles.php:189
+#: ../inc/modal-portfolio-styles.php:227
 msgid "ridge"
 msgstr ""
 
-#: ../inc/modal-portfolio-styles.php:190
+#: ../inc/modal-portfolio-styles.php:228
 msgid "inset"
 msgstr ""
 
-#: ../inc/modal-portfolio-styles.php:191
+#: ../inc/modal-portfolio-styles.php:229
 msgid "outset"
 msgstr ""
 
-#: ../inc/modal-portfolio-styles.php:194
+#: ../inc/modal-portfolio-styles.php:232
 msgid "Borders style"
 msgstr "Style des bordures"
 
-#: ../inc/modal-portfolio-styles.php:201
+#: ../inc/modal-portfolio-styles.php:239
 msgid "Type of corners"
 msgstr "Type de coins"
 
-#: ../inc/modal-portfolio-styles.php:209
+#: ../inc/modal-portfolio-styles.php:247
 msgid "Margin of the filters"
 msgstr "Marges appliquées aux filtres"
+
+#~ msgid "Style of the thumbnails and of the modal window"
+#~ msgstr "Style des vignettes et de la fenêtre modale"
 
 #~ msgid "Customizing the default stylesheet"
 #~ msgstr "Personnalisation des CSS par défaut"

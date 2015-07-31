@@ -7,7 +7,7 @@ Tags: portfolio, port folio, gallery, galleries, portfolios, galerie, galeries, 
 License: GPLv2 or later
 Requires at least: 3.5
 Tested up to: 4.2.3
-Stable Tag: 1.3
+Stable Tag: 1.4
 
 "Modal Portfolio" displays image/video galleries filtered with title and description in a modal using some shortcodes and options ("Modal Portfolio" permet d'afficher des galeries d'images voire vidéos filtr&eacute;es avec titre et description dans une modale à l'aide d'un shortcode et d'options diverses.)
 
@@ -53,6 +53,12 @@ The extension should receive several graphic themes. It is also envisaged to pro
 L'extension devrait recevoir plusieurs th&egrave;mes graphiques. Il est aussi envisag&eacute; de proposer plusieurs types de modales et d'optimiser mieux le responsive web design (qui reste simple ici).
 
 == Changelog ==
+
+= Version 1.4 (01/08/2015) =
+- Ajout de 5 nouveaux param&egrave;tres de style (Added 5 new style settings)
+- Correction d'un conflit entre la fonction apply_filters() et Page Builder (Fixed a conflict between apply_filters() function and Page Builder)
+- Corrections de plusieurs conflits de classes CSS avec d'autres modules (Fixed several CSS classes conflict with other modules)
+- Corrections d'un bug dans les options de styles avec "disabled" (Fixes a bug in the style options with "disabled")
 
 = Version 1.3 (25/07/2015) =
 - Possibilité d'ajouter des vidéos au lieu des images dans la fenêtre modale (Ability to add videos instead of images in the modal window)
